@@ -1,0 +1,19 @@
+// ------------------------------
+// General Card
+// ------------------------------
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid rgba(35, 40, 0, 0.2);
+
+  box-shadow: $shadow;
+}
+
+.card-list {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}

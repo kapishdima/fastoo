@@ -1,0 +1,74 @@
+.promo-container {
+  display: flex;
+  align-items: center;
+  column-gap: 2%;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  &.with-delimiter {
+    border-bottom: 1px solid rgba(35, 40, 0, 0.2);
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__image {
+    width: 50%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    width: 50%;
+  }
+}
+
+// --------------------------------
+// Promo list
+// --------------------------------
+
+.promo-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 14px;
+
+    &.centered {
+      align-items: center;
+    }
+
+    &-title {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+
+      color: $dark-primary;
+    }
+
+    &-description {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150%;
+
+      color: $dark-primary;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+}

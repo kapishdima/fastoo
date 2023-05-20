@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import IndexPage from '@/pages/IndexPage.vue';
+import IndexPage from '@/pages/index/IndexPage.vue';
 
 export const pathes = {
   INDEX: '/',
