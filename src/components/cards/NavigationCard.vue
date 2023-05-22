@@ -2,9 +2,10 @@
   <div class="card navigation-card">
     <router-link
       class="navigation-card__item"
-      v-for="item of list"
+      v-for="(item, index) of list"
       :key="item.label"
       :to="{ path: item.path }"
+      :class="index === activeIndex ? 'navigation-card__item--active' : ''"
     >
       {{ item.label }}
     </router-link>
@@ -13,7 +14,7 @@
 
 <script>
 export default {
-  props: ['list'],
+  props: ['list', 'activeIndex'],
 };
 </script>
 

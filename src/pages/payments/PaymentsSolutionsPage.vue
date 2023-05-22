@@ -52,7 +52,7 @@
         </p>
       </div>
       <div class="section-sidebar">
-        <navigation-card :list="navigationList" />
+        <navigation-card :list="navigationList" :active-index="0" />
       </div>
     </section>
   </v-page>

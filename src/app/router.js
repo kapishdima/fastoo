@@ -5,6 +5,7 @@ import PartnersPage from '@/pages/partners/PartnersPage.vue';
 import AboutUsPage from '@/pages/about-us/AboutUsPage.vue';
 import ContactsPage from '@/pages/contacts/ContactsPage.vue';
 import PaymentsPage from '@/pages/payments/PaymentsSolutionsPage.vue';
+import CreditCardPage from '@/pages/credit-card/CreditCardPage.vue';
 
 export const pathes = {
   INDEX: '/',
@@ -12,6 +13,7 @@ export const pathes = {
   ABOUT_US: '/about-us',
   CONTACTS: '/contacts',
   SOLUTION_PAYMENTS: '/solutions/payments',
+  SOLUTION_CREDIT_CARD: '/solutions/credit-card',
 };
 
 const routes = [
@@ -20,6 +22,7 @@ const routes = [
   { path: pathes.ABOUT_US, component: AboutUsPage },
   { path: pathes.CONTACTS, component: ContactsPage },
   { path: pathes.SOLUTION_PAYMENTS, component: PaymentsPage },
+  { path: pathes.SOLUTION_CREDIT_CARD, component: CreditCardPage },
 ];
 
 export const router = createRouter({
