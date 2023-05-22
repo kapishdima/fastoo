@@ -1,19 +1,56 @@
 .footer {
   display: flex;
-  // justify-content: space-between;
   column-gap: 10%;
+  flex-wrap: wrap;
 
   padding-top: 120px;
   padding-bottom: 28px;
 
+  @include tabletMD {
+    row-gap: 28px;
+  }
+
+  @include mobile {
+    padding-top: 68px;
+    padding-bottom: 14px;
+  }
+
   &-text {
     max-width: 450px;
+
+    @include tabletMD {
+      max-width: none;
+      flex: 1 1 25%;
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
+  }
+
+  .heading-2 {
+    @include tabletMD {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      margin-bottom: 18px;
+    }
   }
 
   &-item {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+
+    @include tabletMD {
+      row-gap: 4px;
+      flex: 1 1 25%;
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
 
     a {
       text-decoration: none;
@@ -29,6 +66,11 @@
       color: $dark-primary;
 
       margin-bottom: 12px;
+
+      @include tabletMD {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -64,4 +106,9 @@
 
   color: $dark-secondary;
   text-align: center;
+
+  @include tabletMD {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

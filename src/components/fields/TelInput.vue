@@ -7,6 +7,7 @@
     :required="required"
     type="tel"
     class="form-field__input"
+    :class="`form-field__input--${variant}`"
     @accept="onAccept"
     @blur="$emit('blur')"
   />
@@ -29,6 +30,10 @@ export default defineComponent({
       required: false,
     },
     modelValue: {
+      type: String,
+      required: false,
+    },
+    variant: {
       type: String,
       required: false,
     },

@@ -1,0 +1,88 @@
+.adventages-card {
+  padding: 28px 30px;
+  margin-bottom: 30px;
+
+  border: none;
+
+  @include mobile {
+    padding: 20px 10px;
+  }
+
+  .adventages-list {
+    &__item {
+      padding: 16px 70px 16px 20px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: $dark-primary;
+
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 14px 0;
+      }
+    }
+  }
+}
+
+.contacts-card {
+  padding: 28px 30px;
+  border: none;
+
+  @include mobile {
+    padding: 20px 10px;
+  }
+
+  .contacts-list {
+    &__item {
+      padding: 18px 0 18px 20px;
+
+      border-bottom: 1px solid #eeeeee;
+
+      @include mobile {
+        padding: 18px 0;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+
+        color: $dark-primary;
+
+        margin-bottom: 8px;
+      }
+
+      &-value {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: $warning-primary;
+      }
+    }
+  }
+}

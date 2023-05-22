@@ -1,0 +1,36 @@
+.navigation-card {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding: 20px 40px;
+    border-bottom: 1px solid #eeeeee;
+
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+
+    color: $dark-primary;
+
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: $warning-primary;
+      color: $white-primary;
+    }
+
+    @include mobile {
+      padding: 20px 10px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

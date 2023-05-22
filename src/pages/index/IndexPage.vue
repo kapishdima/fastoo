@@ -2,7 +2,7 @@
   <v-page classes="home-page">
     <v-promo
       :image="require('@/assets/illustrations/illustration_1.png')"
-      classes="home-page__promo"
+      classes="home-page__promo home-page__offset"
     >
       <h1 class="heading-1 promo-title">We do not miss important details</h1>
       <p class="paragraph promo-text">
@@ -19,7 +19,7 @@
     <section class="section section--centered">
       <h2 class="section-title">How to connect</h2>
       <interactions-list />
-      <div class="section-actions">
+      <div class="section-actions" v-if="!isTouchableDevice()">
         <v-button>Get started</v-button>
       </div>
     </section>
@@ -43,7 +43,7 @@
         <promo-list :list="promoList" />
       </v-promo>
       <v-promo
-        :image="require('@/assets/illustrations/illustration_3.png')"
+        :image="isTouchableDevice() ? '' : require('@/assets/illustrations/illustration_3.png')"
         classes="home-page__promo"
       >
         <h1 class="heading-2 promo-title">Who is Magua Pay?</h1>
@@ -92,6 +92,7 @@
         </p>
         <promo-list :list="promoList1" :centered="true" />
       </v-promo>
+
       <v-promo
         :image="require('@/assets/illustrations/illustration_5.png')"
         classes="home-page__promo "
@@ -138,6 +139,7 @@ import CardList from '@/components/cards/CardList.vue';
 import InteractionsList from '@/modules/InteractionsList/InteractionsList.vue';
 import PromoList from '@/components/layout/Promo/PromoList.vue';
 import StatisticCard from '@/components/cards/StatisticCard.vue';
+import { isTouchableDevice } from '@/app/media-query/media-query';
 
 export default {
   setup() {
@@ -236,12 +238,15 @@ export default {
       },
     ];
 
+    console.log(isTouchableDevice());
+
     return {
       informationCards,
       promoList,
       promoList1,
       promoList2,
       statisticsList,
+      isTouchableDevice,
     };
   },
   components: {

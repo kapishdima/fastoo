@@ -1,6 +1,8 @@
 <template>
   <div class="card statistic-card">
-    <img :src="icon" alt="" class="statistic-card__icon" />
+    <div class="statistic-card__icon-container">
+      <img :src="icon" alt="" class="statistic-card__icon" />
+    </div>
     <h4 class="statistic-card__value">{{ value }}</h4>
     <h4 class="statistic-card__title">{{ title }}</h4>
   </div>

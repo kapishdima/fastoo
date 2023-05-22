@@ -2,6 +2,6 @@
   <router-view />
 </template>
 
-<style lang="scss" scoped>
-@import url('@/app/index.scss');
+<style lang="scss">
+@import '@/app/style/index.scss';
 </style>

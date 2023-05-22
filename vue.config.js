@@ -5,9 +5,9 @@ module.exports = defineConfig({
     loaderOptions: {
       scss: {
         additionalData: `
-          @import "~@/app/fonts.scss";
-          @import "~@/app/variable.scss";
-          @import "~@/app/mixins.scss";
+          @import "~@/app/style/fonts.scss";
+          @import "~@/app/style/variable.scss";
+          @import "~@/app/style/mixins.scss";
         `,
       },
     },

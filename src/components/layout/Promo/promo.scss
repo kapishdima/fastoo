@@ -3,15 +3,41 @@
   align-items: center;
   column-gap: 2%;
 
+  @include tabletMD {
+    flex-direction: column;
+    row-gap: 28px;
+  }
+
+  @include mobile {
+    row-gap: 24px;
+  }
+
   &.reverse {
     flex-direction: row-reverse;
+
+    @include tabletMD {
+      flex-direction: column;
+      row-gap: 28px;
+    }
+
+    @include mobile {
+      row-gap: 24px;
+    }
   }
   &.with-delimiter {
     border-bottom: 1px solid rgba(35, 40, 0, 0.2);
+
+    @include tabletMD {
+      border-bottom: none;
+    }
   }
 
   &__title {
     margin-bottom: 48px;
+
+    @include tabletMD {
+      margin-bottom: 28px;
+    }
   }
 
   &__image {
@@ -21,10 +47,18 @@
       width: 100%;
       object-fit: cover;
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__text {
     width: 50%;
+
+    @include tabletMD {
+      width: 100%;
+    }
   }
 }
 
@@ -42,6 +76,14 @@
     align-items: flex-start;
     column-gap: 14px;
 
+    @include tabletMD {
+      column-gap: 28px;
+    }
+
+    @include mobile {
+      column-gap: 4px;
+    }
+
     &.centered {
       align-items: center;
     }
@@ -54,6 +96,16 @@
       line-height: 38px;
 
       color: $dark-primary;
+
+      @include tabletMD {
+        font-size: 22px;
+        line-height: 25px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     &-description {
@@ -64,11 +116,50 @@
       line-height: 150%;
 
       color: $dark-primary;
+
+      @include tabletMD {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
+
+    @include tabletMD {
+      row-gap: 12px;
+    }
+
+    @include mobile {
+      row-gap: 8px;
+    }
+  }
+
+  &-icon-container {
+    display: flex;
+    @include tabletMD {
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+
+      img {
+        width: 100%;
+
+        object-fit: cover;
+      }
+    }
+
+    @include mobile {
+      min-width: 24px;
+      width: 24px;
+      height: 24px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="form-field">
+  <div class="form-field" :class="`form-field--${size}`">
     <label class="form-field__label">{{ label }}</label>
     <slot></slot>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  props: ['label'],
+  props: ['label', 'size'],
 };
 </script>
 

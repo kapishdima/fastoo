@@ -1,12 +1,16 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 155px;
-
-  padding: 30px 28px;
+  padding: 30px 0;
   box-shadow: $shadow;
+
+  @include tabletMD {
+    padding: 10px 0;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &-logo {
     display: block;
@@ -15,12 +19,97 @@
     max-width: 300px;
 
     object-fit: cover;
+
+    @include tabletMD {
+      min-width: 200px;
+      max-width: 200px;
+    }
+
+    @include mobile {
+      min-width: 85px;
+      max-width: 85px;
+    }
+  }
+
+  &-end {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &-menu__burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+
+    @include tabletMD {
+      display: flex;
+    }
+
+    &.opened {
+      .line {
+        &:nth-child(1) {
+          position: absolute;
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          position: absolute;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          transform: scale(0);
+        }
+      }
+    }
+
+    .line {
+      width: 30px;
+      height: 2px;
+
+      border-radius: 1px;
+      background-color: $dark-primary;
+
+      will-change: transform;
+      transition: transform 0.25s ease;
+
+      transform: rotate(0) scale(1);
+    }
   }
 
   &-menu {
     display: flex;
-
     column-gap: 50px;
+
+    // ---------------------------------
+    // Table Styles
+    // ---------------------------------
+
+    @include tabletMD {
+      width: 50vw;
+      height: 100vh;
+
+      flex-direction: column;
+      row-gap: 10px;
+
+      position: absolute;
+      top: 10vh;
+      right: 0;
+
+      background-color: $white-primary;
+      box-shadow: $shadow;
+
+      opacity: 0;
+      transform: translateX(100%);
+      will-change: transform;
+      transition: transform 0.25s ease, opacity 0.5s ease;
+
+      &.opened {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
     &__link {
       display: flex;
@@ -32,6 +121,7 @@
       font-weight: 400;
       font-size: 24px;
       line-height: 150%;
+      text-decoration: none;
 
       color: $dark-primary;
 
@@ -41,6 +131,12 @@
 
       &:hover {
         color: $accent-primary;
+      }
+
+      @include tabletMD {
+        font-size: 18px;
+
+        padding: 10px;
       }
     }
   }

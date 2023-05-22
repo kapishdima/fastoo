@@ -1,0 +1,94 @@
+<template>
+  <v-page classes="payments-page">
+    <section-banner
+      :bg="require('@/assets/section-bg.png')"
+      title="Payment Solutions System from Magua Pay"
+    />
+    <section class="section-row">
+      <div class="section-content">
+        <p class="paragraph--md">
+          Magua Pay payment solution is all-in-one technical and financial solution created to
+          fulfill various merchant's needs. Secure, easy-to-use, reliable on the one hand;
+          beneficial and trustworthy on the other. To accept payments in the terms of Magua Pay
+          payment solutions means to work with the best possible pricing and being supported by
+          first-class payment technology.
+        </p>
+        <br />
+        <p class="paragraph--md">
+          Magua Pay works both with startups and experienced companies. The big part of our best
+          merchants were startups when they firstly applied for our payment solution. Competent
+          approach along with stimulative conditions from our side gave these companies possibility
+          to focus on their business goals and achieve them one after another. We are very proud of
+          our merchants and we proceed growing together by supporting each other.
+        </p>
+        <h3 class="heading-3 section-content__title">How it works</h3>
+        <p class="paragraph--md">
+          <b>Fair pricing</b> - You will not ever find any slippery formulations or hidden fees in
+          the terms of our payment solutions.
+        </p>
+        <br />
+        <p class="paragraph--md">
+          <b>Easy and fast integration</b> - Full support on every stage of integration makes the
+          whole process quick and smooth.
+        </p>
+        <br />
+        <p class="paragraph--md">
+          <b>Timely payouts</b> - Be sure that you will receive your money exactly on time without
+          any delays from our side.
+        </p>
+
+        <h3 class="heading-3 section-content__title">
+          Chief features of Magua Pay payment solution
+        </h3>
+
+        <p class="paragraph--md">
+          <b>PCI DSS Level 1</b> - The highest security level excludes even a hint of unauthorized
+          actions or other fraudulent activity. Payments are processed securely with Magua Pay.
+        </p>
+        <br />
+        <p class="paragraph--md">
+          <b>Advanced back-office</b> - Armed with multitude of useful features you will be able to
+          put your business on previously unimaginable heights.
+        </p>
+      </div>
+      <div class="section-sidebar">
+        <navigation-card :list="navigationList" />
+      </div>
+    </section>
+  </v-page>
+</template>
+
+<script>
+import VPage from '@/components/layout/Page/VPage.vue';
+import SectionBanner from '@/components/layout/Section/SectionBanner.vue';
+
+import NavigationCard from '@/components/cards/NavigationCard.vue';
+
+export default {
+  components: {
+    VPage,
+    SectionBanner,
+    NavigationCard,
+  },
+
+  setup() {
+    const navigationList = [
+      { path: '/', label: 'Payment Solutions System from Magua Pay' },
+      { path: '/', label: 'Credit Card Processing' },
+      { path: '/', label: 'Internet Acquiring Solution' },
+      { path: '/', label: 'Payment Gateway' },
+      { path: '/', label: 'Recurring Billing service' },
+      { path: '/', label: 'Multicurrency Processing' },
+      { path: '/', label: 'Payment Options' },
+      { path: '/', label: 'Payouts on credit cards' },
+      { path: '/', label: 'Prepaid Cards' },
+    ];
+
+    return {
+      navigationList,
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
