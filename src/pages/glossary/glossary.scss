@@ -1,0 +1,24 @@
+.glossary-page {
+  .glossary-letter {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+
+    color: $dark-primary;
+  }
+
+  .glossary-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .glossary-container {
+    width: 50vw;
+
+    @include tabletMD {
+      width: 100%;
+    }
+  }
+}

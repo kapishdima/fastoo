@@ -1,5 +1,5 @@
 <template>
-  <div class="section-banner">
+  <div class="section-banner" :class="{ reverse }">
     <div class="section-banner-bg">
       <img :src="bg" alt="" class="section-banner-bg__image" />
     </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  props: ['bg', 'title'],
+  props: ['bg', 'title', 'reverse'],
 };
 </script>
 

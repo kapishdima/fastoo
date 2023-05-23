@@ -19,6 +19,12 @@
     margin-bottom: 24px;
   }
 
+  &.reverse {
+    .section-banner__title {
+      color: $white-primary;
+    }
+  }
+
   &-bg {
     position: absolute;
     top: 0;

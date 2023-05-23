@@ -1,0 +1,102 @@
+.faq {
+  width: 100%;
+
+  padding: 18px 22px;
+  border: 1px solid #e7e7e7;
+
+  @include mobile {
+    padding: 18px 10px;
+  }
+
+  &.expanded {
+    .faq-button {
+      .line:nth-child(1) {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+
+    @include mobile {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+    }
+
+    .line {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+
+      background-color: $accent-primary;
+      border-radius: 1px;
+
+      transition: opacity 0.25s ease;
+
+      &:nth-child(1) {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: $dark-primary;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &-content {
+    margin-top: 16px;
+  }
+}
+
+// -------------------------
+// FAQ List
+// -------------------------
+
+.faq-list {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-auto-rows: max-content;
+
+  //   grid-column-gap: 30px;
+  //   grid-row-gap: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 30px;
+  row-gap: 10px;
+
+  &__item {
+    width: calc(50% - 30px);
+
+    @include tabletMD {
+      width: 100%;
+    }
+  }
+}

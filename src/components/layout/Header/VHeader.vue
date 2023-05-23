@@ -5,48 +5,26 @@
         <img src="@/assets/logo.png" alt="Fastoo" class="header-logo" />
 
         <div class="header-menu" :class="{ opened: menuOpened }">
-          <router-link :to="{ path: pathes.INDEX }" class="header-menu__link">Home</router-link>
-          <div class="header-menu__link">
-            <span class="header-menu__link-label" @click="setActiveDropdownId('0')">
-              Solutions <img src="@/assets/icons/angle-down_i.svg" alt=""
-            /></span>
-            <div class="header-menu__dropdown" :class="{ opened: activeDropdownId === '0' }">
-              <router-link
-                :to="{ path: pathes.SOLUTION_PAYMENTS }"
-                class="header-menu__dropdown-item"
-                >Payment Solutions System</router-link
-              >
-              <router-link
-                :to="{ path: pathes.SOLUTION_CREDIT_CARD }"
-                href="#"
-                class="header-menu__dropdown-item"
-                >Credit Card Processing</router-link
-              >
-              <a href="#" class="header-menu__dropdown-item">Internet Acquiring Solution</a>
-              <a href="#" class="header-menu__dropdown-item">Payment Gateway</a>
-              <a href="#" class="header-menu__dropdown-item">Recurring Billing service</a>
-              <a href="#" class="header-menu__dropdown-item">Multicurrency Processing</a>
+          <template v-for="{ path, title, children } of menu" :key="title">
+            <router-link :to="{ path }" class="header-menu__link" v-if="!Boolean(children)">
+              {{ title }}
+            </router-link>
+            <div class="header-menu__link" v-if="Boolean(children)">
+              <span class="header-menu__link-label" @click="setActiveDropdownId(title)">
+                {{ title }} <img src="@/assets/icons/angle-down_i.svg" alt="" />
+              </span>
+              <div class="header-menu__dropdown" :class="{ opened: activeDropdownId === title }">
+                <router-link
+                  v-for="child of children"
+                  :key="child.title"
+                  :to="{ path: child.path }"
+                  class="header-menu__dropdown-item"
+                >
+                  {{ child.title }}
+                </router-link>
+              </div>
             </div>
-          </div>
-          <router-link :to="{ path: pathes.PARTNERS }" class="header-menu__link"
-            >Partners</router-link
-          >
-          <div class="header-menu__link">
-            <span class="header-menu__link-label" @click="setActiveDropdownId('1')">
-              Knowledge Base <img src="@/assets/icons/angle-down_i.svg" alt=""
-            /></span>
-            <div class="header-menu__dropdown" :class="{ opened: activeDropdownId === '1' }">
-              <a href="#" class="header-menu__dropdown-item">FAQ</a>
-              <a href="#" class="header-menu__dropdown-item">Glossary</a>
-            </div>
-          </div>
-          <router-link :to="{ path: pathes.ABOUT_US }" class="header-menu__link"
-            >About Us</router-link
-          >
-          <router-link :to="{ path: pathes.CONTACTS }" class="header-menu__link"
-            >Contact Us</router-link
-          >
-          <div class="header-menu__link">Payment</div>
+          </template>
         </div>
 
         <div class="header-end">
@@ -59,25 +37,7 @@
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <v-button v-if="!isMobile()">Account</v-button>
-          <svg
-            v-if="isMobile()"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21 11.9999C21.003 13.7866 20.4715 15.5335 19.474 17.0159C18.6514 18.2428 17.5391 19.2482 16.2355 19.943C14.9319 20.6379 13.4772 21.0009 12 20.9999C10.5228 21.0009 9.06808 20.6379 7.76451 19.943C6.46093 19.2482 5.34865 18.2428 4.526 17.0159C3.74273 15.8483 3.2439 14.5134 3.06951 13.1183C2.89511 11.7232 3.05 10.3066 3.52175 8.98215C3.9935 7.65768 4.769 6.46216 5.78607 5.49142C6.80314 4.52068 8.0335 3.80173 9.37851 3.39221C10.7235 2.98268 12.1458 2.89396 13.5312 3.13317C14.9167 3.37238 16.2269 3.93286 17.3567 4.76969C18.4865 5.60651 19.4046 6.69639 20.0373 7.95197C20.67 9.20755 20.9997 10.5939 21 11.9999Z"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M13 9C13 9.26522 12.8946 9.51957 12.7071 9.70711C12.5196 9.89464 12.2652 10 12 10V12C12.7957 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9H13ZM12 10C11.7348 10 11.4804 9.89464 11.2929 9.70711C11.1054 9.51957 11 9.26522 11 9H9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V10ZM11 9C11 8.73478 11.1054 8.48043 11.2929 8.29289C11.4804 8.10536 11.7348 8 12 8V6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9H11ZM12 8C12.2652 8 12.5196 8.10536 12.7071 8.29289C12.8946 8.48043 13 8.73478 13 9H15C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7957 6 12 6V8ZM5.166 17.856L4.207 17.571L4.052 18.094L4.407 18.507L5.166 17.856ZM18.834 17.856L19.594 18.507L19.948 18.094L19.793 17.571L18.834 17.856ZM9 16H15V14H9V16ZM9 14C7.92314 14 6.87502 14.3475 6.01147 14.9909C5.14793 15.6343 4.51508 16.5391 4.207 17.571L6.124 18.141C6.30926 17.5222 6.68915 16.9797 7.20727 16.594C7.72538 16.2083 8.35408 16 9 16V14ZM12 20C10.8455 20.0013 9.70444 19.7521 8.65561 19.2695C7.60678 18.787 6.67515 18.0826 5.925 17.205L4.407 18.507C5.34489 19.6035 6.50939 20.4836 7.82023 21.0866C9.13108 21.6897 10.5571 22.0013 12 22V20ZM15 16C16.357 16 17.506 16.902 17.876 18.142L19.793 17.571C19.485 16.5393 18.8513 15.6345 17.9879 14.9912C17.1246 14.3478 16.0767 14.0002 15 14V16ZM18.075 17.205C17.3249 18.0826 16.3932 18.787 15.3444 19.2695C14.2956 19.7521 13.1545 20.0013 12 20V22C13.4429 22.0013 14.8689 21.6897 16.1798 21.0866C17.4906 20.4836 18.6561 19.6035 19.594 18.507L18.075 17.205Z"
-              fill="black"
-            />
-          </svg>
+          <account-button />
         </div>
       </div>
     </v-container>
@@ -85,18 +45,18 @@
 </template>
 
 <script>
-import { pathes } from '@/app/router';
-import VButton from '@/components/button/VButton.vue';
 import VContainer from '../Container/VContainer.vue';
+import AccountButton from '@/modules/AccountButton/AccountButton.vue';
 import { isTouchableDevice, isMobile } from '@/app/media-query/media-query';
+import { pathes, menu } from '@/app/router';
 
 export default {
   setup() {
-    return { pathes, isMobile };
+    return { pathes, menu, isMobile };
   },
 
   components: {
-    VButton,
+    AccountButton,
     VContainer,
   },
 
