@@ -63,6 +63,7 @@ import VPage from '@/components/layout/Page/VPage.vue';
 import SectionBanner from '@/components/layout/Section/SectionBanner.vue';
 
 import NavigationCard from '@/components/cards/NavigationCard.vue';
+import { pathes } from '@/app/router';
 
 export default {
   components: {
@@ -73,8 +74,8 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: '/', label: 'Payment Solutions System from Magua Pay' },
-      { path: '/', label: 'Credit Card Processing' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: '/', label: 'Internet Acquiring Solution' },
       { path: '/', label: 'Payment Gateway' },
       { path: '/', label: 'Recurring Billing service' },
