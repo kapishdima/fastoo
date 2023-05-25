@@ -1,0 +1,104 @@
+.application-form-page {
+  .section-application-form {
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 40px 0;
+
+      position: relative;
+
+      &::before {
+        content: '';
+
+        width: 100vw;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: -$container-fullhd-padding;
+        z-index: -1;
+
+        background-color: $accent-primary;
+
+        @include tabletMD {
+          left: -$container-table-padding;
+        }
+
+        @include mobile {
+          left: -$container-mobile-padding;
+        }
+      }
+    }
+
+    .application-form {
+      display: flex;
+      flex-direction: column;
+
+      padding-top: 60px;
+      column-gap: 20px;
+
+      @include mobile {
+        padding-top: 24px;
+      }
+
+      &-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        flex: 1 1;
+
+        max-width: 30%;
+
+        @include tabletMD {
+          max-width: 100%;
+        }
+      }
+
+      &-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 20px;
+        row-gap: 28px;
+
+        .form-field {
+          flex: 1 1 calc(33% - 20px);
+          max-width: calc(33% - 20px);
+        }
+
+        @include tabletMD {
+          flex-direction: column;
+
+          .form-field {
+            flex: 1 1 100%;
+            max-width: 100%;
+          }
+        }
+      }
+
+      &-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 33px;
+
+        color: $accent-primary;
+
+        margin-top: 46px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+      }
+    }
+  }
+}

@@ -97,6 +97,11 @@
 
       color: $dark-primary;
 
+      @include desctop {
+        font-size: 22px;
+        line-height: 25px;
+      }
+
       @include tabletMD {
         font-size: 22px;
         line-height: 25px;

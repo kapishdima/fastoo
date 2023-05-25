@@ -1,7 +1,22 @@
 <template>
   <div class="faq-list">
-    <div class="faq-list__item" v-for="(faq, index) of faqList" :key="faq.title">
-      <v-faq :title="faq.title" :description="faq.description" :index="index" />
+    <div class="faq-list__column">
+      <div
+        class="faq-list__item"
+        v-for="(faq, index) of faqList.slice(0, Math.floor(faqList.length / 2))"
+        :key="faq.title"
+      >
+        <v-faq :title="faq.title" :description="faq.description" :index="index" />
+      </div>
+    </div>
+    <div class="faq-list__column">
+      <div
+        class="faq-list__item"
+        v-for="(faq, index) of faqList.slice(Math.floor(faqList.length / 2))"
+        :key="faq.title"
+      >
+        <v-faq :title="faq.title" :description="faq.description" :index="index" />
+      </div>
     </div>
   </div>
 </template>

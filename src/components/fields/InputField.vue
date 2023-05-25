@@ -1,16 +1,19 @@
 <template>
-  <input
-    :type="type"
-    :placeholder="placeholder"
-    :name="name"
-    :required="required"
-    :class="`form-field__input--${size} form-field__input--${variant}`"
-    :value="modelValue"
-    :disabled="disabled"
-    @input="input($event)"
-    @blur="$emit('blur')"
-    class="form-field__input"
-  />
+  <div class="form-field__container">
+    <slot name="preffix"></slot>
+    <input
+      :type="type"
+      :placeholder="placeholder"
+      :name="name"
+      :required="required"
+      :class="`form-field__input--${size} form-field__input--${variant}`"
+      :value="modelValue"
+      :disabled="disabled"
+      @input="input($event)"
+      @blur="$emit('blur')"
+      class="form-field__input"
+    />
+  </div>
 </template>
 
 <script>

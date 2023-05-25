@@ -27,6 +27,11 @@
         border-bottom: none;
       }
 
+      @include desctop {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
       @include mobile {
         font-size: 16px;
         line-height: 22px;

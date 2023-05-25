@@ -76,13 +76,10 @@ export default {
     const navigationList = [
       { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
-      { path: '/', label: 'Internet Acquiring Solution' },
-      { path: '/', label: 'Payment Gateway' },
-      { path: '/', label: 'Recurring Billing service' },
-      { path: '/', label: 'Multicurrency Processing' },
-      { path: '/', label: 'Payment Options' },
-      { path: '/', label: 'Payouts on credit cards' },
-      { path: '/', label: 'Prepaid Cards' },
+      { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
+      { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },
+      { path: pathes.SOLUTION_RECURRING_BILLING, label: 'Recurring Billing service' },
+      { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, label: 'Multicurrency Processing' },
     ];
 
     return {

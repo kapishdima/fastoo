@@ -1,0 +1,51 @@
+.tabs {
+  &-pills {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    margin-bottom: 24px;
+
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .tab-pill {
+    padding: 10px 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $dark-primary;
+    text-align: center;
+
+    border-bottom: 2px solid transparent;
+
+    transition: border-color 0.25s ease;
+    cursor: pointer;
+
+    @include tabletMD {
+      font-size: 16px;
+      line-height: 18px;
+      white-space: nowrap;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 18px;
+      white-space: nowrap;
+    }
+
+    &.active {
+      font-weight: 700;
+      border-color: $accent-primary;
+    }
+  }
+
+  .tab-pane {
+    margin-top: 60px;
+  }
+}

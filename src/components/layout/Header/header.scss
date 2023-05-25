@@ -20,6 +20,11 @@
 
     object-fit: cover;
 
+    @include desctop {
+      min-width: 200px;
+      max-width: 200px;
+    }
+
     @include tabletMD {
       min-width: 200px;
       max-width: 200px;
@@ -89,6 +94,10 @@
   &-menu {
     display: flex;
     column-gap: 50px;
+
+    @include desctop {
+      column-gap: 24px;
+    }
 
     // ---------------------------------
     // Table Styles
@@ -173,6 +182,11 @@
           color: $accent-primary;
         }
 
+        @include desctop {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
         @include tabletMD {
           font-size: 16px;
           line-height: 24px;
@@ -203,6 +217,11 @@
 
       &:hover {
         color: $accent-primary;
+      }
+
+      @include desctop {
+        font-size: 16px;
+        line-height: 24px;
       }
 
       @include tabletMD {

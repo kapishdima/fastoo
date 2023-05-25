@@ -9,7 +9,9 @@
         Individual and careful approach leads to complete understanding of your needs. You will
         recieve even better payment solution than you expect!
       </p>
-      <v-button>Get started</v-button>
+      <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
+        <v-button>Get started</v-button>
+      </router-link>
     </v-promo>
     <card-list :list="informationCards">
       <template #item="{ item }">
@@ -19,9 +21,9 @@
     <section class="section section--centered">
       <h2 class="section-title">How to connect</h2>
       <interactions-list />
-      <div class="section-actions" v-if="!isTouchableDevice()">
+      <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
         <v-button>Get started</v-button>
-      </div>
+      </router-link>
     </section>
     <section
       class="section"
@@ -63,7 +65,9 @@
           and, of course, the most affordable. You will never find any kind of hidden fees,
           concealed charges and deliberate misunderstandings in our offerings.
         </p>
-        <v-button>About us</v-button>
+        <router-link class="button-link" :to="{ path: pathes.ABOUT_US }">
+          <v-button>About us</v-button>
+        </router-link>
       </v-promo>
     </section>
 
@@ -140,6 +144,7 @@ import InteractionsList from '@/modules/InteractionsList/InteractionsList.vue';
 import PromoList from '@/components/layout/Promo/PromoList.vue';
 import StatisticCard from '@/components/cards/StatisticCard.vue';
 import { isTouchableDevice } from '@/app/media-query/media-query';
+import { pathes } from '@/app/router';
 
 export default {
   setup() {
@@ -238,8 +243,6 @@ export default {
       },
     ];
 
-    console.log(isTouchableDevice());
-
     return {
       informationCards,
       promoList,
@@ -247,6 +250,7 @@ export default {
       promoList2,
       statisticsList,
       isTouchableDevice,
+      pathes,
     };
   },
   components: {

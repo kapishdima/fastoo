@@ -1,0 +1,47 @@
+.sign-up-page {
+  .section-sign-up {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      margin: 40px 0;
+    }
+
+    .button {
+      margin-top: 60px;
+
+      @include tabletMD {
+        margin-top: 48px;
+      }
+
+      @include mobile {
+        margin-top: 24px;
+      }
+    }
+  }
+  .section-decoration {
+    position: absolute;
+    top: 0;
+    left: -$container-fullhd-padding;
+    z-index: -1;
+
+    width: 100vw;
+    height: 55%;
+
+    background: $accent-primary;
+
+    @include tabletMD {
+      height: 35%;
+      left: -$container-table-padding;
+    }
+
+    @include mobile {
+      height: 25%;
+
+      left: -$container-mobile-padding;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.merchants-page {
+  .section-merchants {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      margin: 40px 0;
+    }
+  }
+  .section-decoration {
+    position: absolute;
+    top: 0;
+    left: -$container-fullhd-padding;
+    z-index: -1;
+
+    width: 100vw;
+    height: 40vh;
+
+    background: $accent-primary;
+
+    @include tabletMD {
+      height: 30vh;
+      left: -$container-table-padding;
+    }
+
+    @include mobile {
+      height: 20vh;
+
+      left: -$container-mobile-padding;
+    }
+  }
+
+  .merchants-form-container {
+    width: 40vw;
+
+    padding: 60px 120px;
+
+    background: $white-primary;
+    box-shadow: $shadow;
+
+    @include tabletMD {
+      width: 80vw;
+    }
+
+    @include tabletSM {
+      padding: 28px 60px;
+    }
+
+    @include mobile {
+      width: 95vw;
+      padding: 28px 20px;
+    }
+
+    .merchants-form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
+
+      .form-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .merchant-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+
+        margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include tabletMD {
+          margin-bottom: 28px;
+        }
+
+        @include tabletSM {
+          margin-bottom: 14px;
+        }
+
+        @include mobile {
+          row-gap: 10px;
+        }
+
+        &__title {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 24px;
+          text-align: center;
+
+          color: $accent-primary;
+
+          margin-bottom: 28px;
+
+          @include mobile {
+            font-size: 20px;
+            line-height: 20px;
+            text-align-last: left;
+          }
+        }
+
+        .merchant-actions {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          column-gap: 80px;
+
+          @include mobile {
+            column-gap: 10px;
+            justify-content: space-between;
+          }
+
+          &__item {
+            display: flex;
+            align-items: center;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+
+            color: $dark-primary;
+
+            cursor: pointer;
+
+            @include mobile {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

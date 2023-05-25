@@ -1,5 +1,5 @@
 <template>
-  <form :class="classNames" class="form-container" @submit.prevent @submit.stop @submit="onSubmit">
+  <form :class="classes" class="form-container" @submit.prevent @submit.stop @submit="onSubmit">
     <h5 class="form-subtitle" v-if="Boolean(subtitle)">{{ subtitle }}</h5>
     <slot
       name="fields"
@@ -18,7 +18,7 @@ import set from 'lodash.set';
 export default {
   emits: ['submit'],
   props: {
-    classNames: {
+    classes: {
       type: String,
       required: false,
     },
@@ -99,6 +99,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import './form.scss';
 </style>

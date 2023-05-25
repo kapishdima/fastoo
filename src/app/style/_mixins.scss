@@ -4,6 +4,12 @@
   }
 }
 
+@mixin desctop {
+  @media (min-width: 1360px) and (max-width: 1680px) {
+    @content;
+  }
+}
+
 @mixin tabletMD {
   @media (max-width: 1024px) {
     @content;
