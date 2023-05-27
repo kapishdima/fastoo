@@ -2,20 +2,20 @@
   <v-page classes="payments-page">
     <section-banner
       :bg="require('@/assets/section-bg.png')"
-      title="Payment Solutions System from Magua Pay"
+      title="Payment Solutions System from Fastoo"
     />
     <section class="section-row">
       <div class="section-content">
         <p class="paragraph--md">
-          Magua Pay payment solution is all-in-one technical and financial solution created to
-          fulfill various merchant's needs. Secure, easy-to-use, reliable on the one hand;
-          beneficial and trustworthy on the other. To accept payments in the terms of Magua Pay
-          payment solutions means to work with the best possible pricing and being supported by
-          first-class payment technology.
+          Fastoo payment solution is all-in-one technical and financial solution created to fulfill
+          various merchant's needs. Secure, easy-to-use, reliable on the one hand; beneficial and
+          trustworthy on the other. To accept payments in the terms of Fastoo payment solutions
+          means to work with the best possible pricing and being supported by first-class payment
+          technology.
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay works both with startups and experienced companies. The big part of our best
+          Fastoo works both with startups and experienced companies. The big part of our best
           merchants were startups when they firstly applied for our payment solution. Competent
           approach along with stimulative conditions from our side gave these companies possibility
           to focus on their business goals and achieve them one after another. We are very proud of
@@ -37,13 +37,11 @@
           any delays from our side.
         </p>
 
-        <h3 class="heading-3 section-content__title">
-          Chief features of Magua Pay payment solution
-        </h3>
+        <h3 class="heading-3 section-content__title">Chief features of Fastoo payment solution</h3>
 
         <p class="paragraph--md">
           <b>PCI DSS Level 1</b> - The highest security level excludes even a hint of unauthorized
-          actions or other fraudulent activity. Payments are processed securely with Magua Pay.
+          actions or other fraudulent activity. Payments are processed securely with Fastoo.
         </p>
         <br />
         <p class="paragraph--md">
@@ -74,7 +72,7 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },

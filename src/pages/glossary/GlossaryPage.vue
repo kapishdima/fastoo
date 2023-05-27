@@ -31,8 +31,8 @@
         </template>
 
         <p class="paragraph">
-          Please also check our Articles section to understand Magua Pay payment solution better.
-          For more information please contact us.
+          Please also check our Articles section to understand Fastoo payment solution better. For
+          more information please contact us.
         </p>
       </div>
     </div>

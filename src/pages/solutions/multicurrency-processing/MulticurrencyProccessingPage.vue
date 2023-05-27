@@ -6,9 +6,9 @@
         <p class="paragraph--md">
           In the terms of nowaday world globalization merchants and their customers may be situated
           in different countries and even in different parts of the world. Certain time ago
-          merchants were facing difficulties due to this fact, but today with Magua Pay
-          multicurrency processing solution it is not important whether you are working in Europe,
-          Asia or Africa, America or Australia.
+          merchants were facing difficulties due to this fact, but today with Fastoo multicurrency
+          processing solution it is not important whether you are working in Europe, Asia or Africa,
+          America or Australia.
         </p>
         <br />
         <p class="paragraph--md">
@@ -90,7 +90,7 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },

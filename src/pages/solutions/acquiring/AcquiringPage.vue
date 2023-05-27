@@ -4,7 +4,7 @@
     <section class="section-row">
       <div class="section-content">
         <p class="paragraph--md">
-          The main activity of Magua Pay processing company is providing of Internet acquiring
+          The main activity of Fastoo processing company is providing of Internet acquiring
           services. Having a lot of successful experience in e-commerce sphere we provide worldwide
           Internet businesses with high-quality acquiring solutions. Experience of working with
           diverse industries allows us to elaborate optimal payment solutions which have already
@@ -15,14 +15,14 @@
           succeed.
         </p>
         <br />
-        <h3 class="heading-3 section-content__title">Advantages of Magua Pay Internet acquiring</h3>
+        <h3 class="heading-3 section-content__title">Advantages of Fastoo Internet acquiring</h3>
         <img
           src="@/assets/illustrations/solutions/credit-card/illustation_2.png"
           alt=""
           class="section-image"
         />
         <h3 class="heading-3 section-content__title">
-          The principle of Magua Pay Internet acquiring work
+          The principle of Fastoo Internet acquiring work
         </h3>
         <img
           src="@/assets/illustrations/solutions/credit-card/illustation_1.png"
@@ -31,7 +31,7 @@
         />
         <p class="paragraph--md">
           Customer makes a purchase at Merchant’s website. Coded information is momentarily
-          transmitted on Magua Pay servers.
+          transmitted on Fastoo servers.
         </p>
         <br />
         <p class="paragraph--md">
@@ -52,16 +52,14 @@
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay instantly receives Issuing bank response along with unique code for acceptation
-          or declination of transaction.
+          Fastoo instantly receives Issuing bank response along with unique code for acceptation or
+          declination of transaction.
         </p>
         <br />
-        <p class="paragraph--md">Magua Pay notifies Merchant about payment status.</p>
+        <p class="paragraph--md">Fastoo notifies Merchant about payment status.</p>
         <p class="paragraph--md">Customer receives confirmation of successful payment.</p>
 
-        <h3 class="heading-3 section-content__title">
-          Industries for Magua Pay Internet acquiring
-        </h3>
+        <h3 class="heading-3 section-content__title">Industries for Fastoo Internet acquiring</h3>
 
         <p class="paragraph--md">
           The complete list of industries, which are acceptable for our payment solutions, would
@@ -96,7 +94,7 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },

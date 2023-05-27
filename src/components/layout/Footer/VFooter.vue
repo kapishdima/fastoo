@@ -21,15 +21,25 @@
       </div>
       <div class="footer-item">
         <h4 class="footer-item__title">Solutions</h4>
-        <a href="#" class="footer-link subtitle" v-for="link of solutionLinks" :key="link">
-          {{ link }}
-        </a>
+        <router-link
+          class="footer-link subtitle"
+          v-for="link of solutionLinks"
+          :key="link"
+          :to="{ path: link.path }"
+        >
+          {{ link.label }}
+        </router-link>
       </div>
       <div class="footer-item">
         <h4 class="footer-item__title">Support</h4>
-        <a href="#" class="footer-link subtitle" v-for="link of supportLinks" :key="link">
-          {{ link }}
-        </a>
+        <router-link
+          class="footer-link subtitle"
+          v-for="link of supportLinks"
+          :key="link"
+          :to="{ path: link.path }"
+        >
+          {{ link.lable }}
+        </router-link>
       </div>
     </v-container>
     <div class="copyright">Copyright 2023 New Payment System LLC. All Rights Reserved</div>
@@ -38,22 +48,29 @@
 
 <script>
 import VContainer from '../Container/VContainer.vue';
+import { pathes } from '@/app/router';
 export default {
   components: {
     VContainer,
   },
   setup() {
     const contacts = [
-      { icon: require('@/assets/icons/i_phone.svg'), title: 'Phone', value: '+380 773 433 321' },
+      {
+        icon: require('@/assets/icons/i_phone.svg'),
+        title: 'Phone',
+        value:
+          '<a href="tel:+995 591 06 55 93" style="color: inherit; text-decoration: none;">+995 591 06 55 93</a>',
+      },
       {
         icon: require('@/assets/icons/i_mail.svg'),
         title: 'Email',
-        value: 'assistance@magua-pay.com',
+        value:
+          '<a href="mailt:newpaymentsystems@gmail.com" style="color: inherit; text-decoration: none;">newpaymentsystems@gmail.com</a>',
       },
       {
         icon: require('@/assets/icons/i_location.svg'),
         title: 'Address',
-        value: '555 Burrard St <br/> Vancouver,BC V7X 1M8,Canada <br/> Office 02-125',
+        value: '12 M.Aleksidze str., floor 14, <br/> Office space №46, <br/> Tbilisi, Georgia',
       },
       {
         icon: require('@/assets/icons/i_identify.svg'),
@@ -63,16 +80,18 @@ export default {
     ];
 
     const solutionLinks = [
-      'Credit Card Processing',
-      'Internet Acquiring Solution',
-      'Payment Gateway',
-      'Recurring Billing service',
-      'Multicurrency Processing',
-      'Payment Options',
-      'Prepaid Cards',
+      { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
+      { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
+      { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },
+      { path: pathes.SOLUTION_RECURRING_BILLING, label: 'Recurring Billing service' },
+      { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, label: 'Multicurrency Processing' },
     ];
 
-    const supportLinks = ['F.A.Q.', 'Glossary', 'Terms and Conditions', 'AML | KYC', 'Contact Us'];
+    const supportLinks = [
+      { lable: 'F.A.Q.', path: pathes.FAQ },
+      { lable: 'Glossary', path: pathes.GLOSSARY },
+      { lable: 'Contact Us', path: pathes.CONTACTS },
+    ];
 
     return { contacts, supportLinks, solutionLinks };
   },

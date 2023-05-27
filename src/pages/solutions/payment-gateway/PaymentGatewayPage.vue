@@ -4,7 +4,7 @@
     <section class="section-row">
       <div class="section-content">
         <p class="paragraph--md">
-          Magua Pay payment technology is combination of numerous security features and handy tools
+          Fastoo payment technology is combination of numerous security features and handy tools
           that make payment acceptance beneficial and pleasant. Our elaborated payment gateway was
           developed by high-skilled team of web-developers, programmers and web-designers. We are
           constantly updating and upgrading our payment gateway allowing our clients to use only
@@ -12,13 +12,12 @@
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay payment gateway has intuitive and convenient interface. We do all imaginable to
+          Fastoo payment gateway has intuitive and convenient interface. We do all imaginable to
           guard our clients from different unpleasant issues. That is why our payment gateway is PCI
-          DSS Level 1 compliant and includes all contemporary secure options. However Magua Pay
-          payment gateway is extremely secured, we managed to make it understandable and
-          user-friendly allowing our merchants to enjoy security and spend time on business
-          development. You can be sure that our safety features keep you away from all kinds of
-          unapproved access.
+          DSS Level 1 compliant and includes all contemporary secure options. However Fastoo payment
+          gateway is extremely secured, we managed to make it understandable and user-friendly
+          allowing our merchants to enjoy security and spend time on business development. You can
+          be sure that our safety features keep you away from all kinds of unapproved access.
         </p>
         <br />
         <img
@@ -29,13 +28,13 @@
         <h3 class="heading-3 section-content__title">Advanced security features</h3>
 
         <p class="paragraph--md">
-          Magua Pay payment gateway contemporary security features have been implemented to prevent
-          any possibility of fraud actions. We do the utmost to protect our clients making our
-          payment gateway utterly secured. Magua Pay security department is permanently inventing
-          and applying new technical tools that can decrease threat of damage caused by fraud. The
-          whole team of programmers and managers is involved in this process because all
-          participants of credit card processing scheme must obey security rules. This is the way
-          how to make safety your friend and work without threat of damage.
+          Fastoo payment gateway contemporary security features have been implemented to prevent any
+          possibility of fraud actions. We do the utmost to protect our clients making our payment
+          gateway utterly secured. Fastoo security department is permanently inventing and applying
+          new technical tools that can decrease threat of damage caused by fraud. The whole team of
+          programmers and managers is involved in this process because all participants of credit
+          card processing scheme must obey security rules. This is the way how to make safety your
+          friend and work without threat of damage.
         </p>
         <br />
         <p class="paragraph--md">List of our security features: *</p>
@@ -76,9 +75,9 @@
           </li>
         </ul>
 
-        <p class="paragraph--md">* – this is not a full list of Magua Pay security options</p>
+        <p class="paragraph--md">* – this is not a full list of Fastoo security options</p>
         <p class="paragraph--md">
-          Discover the simplicity of payment process using Magua Pay payment gateway and merchant
+          Discover the simplicity of payment process using Fastoo payment gateway and merchant
           account.
         </p>
       </div>
@@ -106,7 +105,7 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },

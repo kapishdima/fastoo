@@ -20,13 +20,13 @@ export default {
       {
         icon: require('@/assets/icons/contacts/office-icon.svg'),
         title: 'Office',
-        value: '555 Burrard <br/> StVancouver,BC V7X <br/> 1M8,CanadaOffice 02-125',
+        value: '12 M.Aleksidze str., floor 14, <br/> Office space №46, <br/> Tbilisi, Georgia',
       },
       {
         icon: require('@/assets/icons/contacts/contact-icon.svg'),
         title: 'Contact',
         value:
-          '<a style="color: inherit; text-decoration: none;" href="tel:+1 (778) 401-7776">+1 (778) 401-7776</a> <br/> <a  style="color: inherit; text-decoration: none;" href="mailto:assistance@magua-pay.com">assistance@magua-pay.com</a>',
+          '<a href="tel:+995 591 06 55 93" style="color: inherit; text-decoration: none;">+995 591 06 55 93</a>',
       },
       {
         icon: require('@/assets/icons/contacts/clock-icon.svg'),

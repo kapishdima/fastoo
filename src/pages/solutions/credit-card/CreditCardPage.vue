@@ -4,7 +4,7 @@
     <section class="section-row">
       <div class="section-content">
         <p class="paragraph--md">
-          Magua Pay is the company that successfully helps merchant from numerous types of business
+          Fastoo is the company that successfully helps merchant from numerous types of business
           with credit card processing. All our clients are different. They have own style of work,
           however we provide payments solutions for everyone. Regardless of type of industry or
           size, each company is eager to receive first-rate credit card processing solution on fair
@@ -14,13 +14,13 @@
         </p>
         <br />
         <p class="paragraph--md">
-          That is why Magua Pay credit card processing is multifunctional all-in-one solution
-          merchants are looking for. Our dedicated managers are always ready to offer you the best
-          possible credit card processing and you can be sure that the whole process will pass
-          quickly and smoothly. Your optimal payment solution is closer than you think. The search
-          for better payment solution ends here as more than 50% of our merchants switched to us
-          from other providers. They have already found optimal solution for credit card processing,
-          why don’t you do the same?
+          That is why Fastoo credit card processing is multifunctional all-in-one solution merchants
+          are looking for. Our dedicated managers are always ready to offer you the best possible
+          credit card processing and you can be sure that the whole process will pass quickly and
+          smoothly. Your optimal payment solution is closer than you think. The search for better
+          payment solution ends here as more than 50% of our merchants switched to us from other
+          providers. They have already found optimal solution for credit card processing, why don’t
+          you do the same?
         </p>
         <h3 class="heading-3 section-content__title">Credit card processing chart</h3>
         <img
@@ -30,11 +30,11 @@
         />
         <p class="paragraph--md">
           Customer makes a purchase at Merchant’s webstore. The transaction information is
-          momentarily transferred to Magua Pay servers by force of different payment page features.
+          momentarily transferred to Fastoo servers by force of different payment page features.
         </p>
         <br />
         <p class="paragraph--md">
-          The payment data is checked by Magua Pay fraud monitoring system and if only there are no
+          The payment data is checked by Fastoo fraud monitoring system and if only there are no
           suspicious actions it is sent to the trusted acquiring bank. Merchant receives immediate
           notice about passed transaction. In case our anti-fraud system reveals an unapproved
           attempt it blacklists this fraudulent user.
@@ -51,12 +51,12 @@
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay receives the Issuing Bank reply with corresponding approval or denial code.
+          Fastoo receives the Issuing Bank reply with corresponding approval or denial code.
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay processes the reply from Acquiring Bank and notifies Merchant that transaction
-          has passed.
+          Fastoo processes the reply from Acquiring Bank and notifies Merchant that transaction has
+          passed.
         </p>
 
         <p class="paragraph--md">
@@ -64,11 +64,11 @@
         </p>
 
         <h3 class="heading-3 section-content__title">
-          Advantages of Magua Pay credit card processing
+          Advantages of Fastoo credit card processing
         </h3>
 
         <p class="paragraph--md">
-          United together security, convenience and reliability are qualities that form Magua Pay
+          United together security, convenience and reliability are qualities that form Fastoo
           credit card processing making it universal for merchants from all around the world. We
           believe that every client is unique one, which is why our credit card processing solution
           is flexible enough to meet all merchants’ needs. We strictly adhere to the attitude that
@@ -106,7 +106,7 @@ export default {
 
   setup() {
     const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Magua Pay' },
+      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
       { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
       { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },

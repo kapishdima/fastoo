@@ -21,9 +21,11 @@
     <section class="section section--centered">
       <h2 class="section-title">How to connect</h2>
       <interactions-list />
-      <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
-        <v-button>Get started</v-button>
-      </router-link>
+      <div class="section-actions">
+        <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
+          <v-button>Get started</v-button>
+        </router-link>
+      </div>
     </section>
     <section
       class="section"
@@ -37,9 +39,9 @@
         :reverse="true"
         :has-delimiter="true"
       >
-        <h1 class="heading-2 promo-title">Apply for Magua Pay merchant services now!</h1>
+        <h1 class="heading-2 promo-title">Apply for Fastoo merchant services now!</h1>
         <p class="paragraph promo-text">
-          To work with Magua Pay processing means to earn money receiving genuine payments through
+          To work with Fastoo processing means to earn money receiving genuine payments through
           reliable payment gateway.Start accepting credit cards with us and enjoy it!
         </p>
         <promo-list :list="promoList" />
@@ -48,9 +50,9 @@
         :image="isTouchableDevice() ? '' : require('@/assets/illustrations/illustration_3.png')"
         classes="home-page__promo"
       >
-        <h1 class="heading-2 promo-title">Who is Magua Pay?</h1>
+        <h1 class="heading-2 promo-title">Who is Fastoo?</h1>
         <p class="paragraph">
-          Magua Pay INC. is a Canadian company, licensed by the standards of Money Service Business
+          Fastoo INC. is a Canadian company, licensed by the standards of Money Service Business
           (MSB) that builds business upon high-quality service and customers’ trust, providing that
           individual and attentive approach, immediate reaction to inquiries, readiness to provide
           nothing but the best possible service are the qualities to focus on, because they make us
@@ -58,12 +60,12 @@
         </p>
         <br />
         <p class="paragraph promo-text">
-          Every person in Magua Pay knows that reputation we have gained through years of
-          conscientious work is our main property. We are sure that such attitude towards clients
-          and partners leads to mutual prosperity and business achievements. Magua Pay’s main goal
-          is to continue to prove that our solutions are the most appropriate, the most dependable
-          and, of course, the most affordable. You will never find any kind of hidden fees,
-          concealed charges and deliberate misunderstandings in our offerings.
+          Every person in Fastoo knows that reputation we have gained through years of conscientious
+          work is our main property. We are sure that such attitude towards clients and partners
+          leads to mutual prosperity and business achievements. Fastoo’s main goal is to continue to
+          prove that our solutions are the most appropriate, the most dependable and, of course, the
+          most affordable. You will never find any kind of hidden fees, concealed charges and
+          deliberate misunderstandings in our offerings.
         </p>
         <router-link class="button-link" :to="{ path: pathes.ABOUT_US }">
           <v-button>About us</v-button>
@@ -87,9 +89,9 @@
         :reverse="true"
         :has-delimiter="true"
       >
-        <h1 class="heading-2 promo-title">What makes Magua Pay different from other processors?</h1>
+        <h1 class="heading-2 promo-title">What makes Fastoo different from other processors?</h1>
         <p class="paragraph promo-text">
-          The main difference between Magua Pay and other companies is quality level of our payment
+          The main difference between Fastoo and other companies is quality level of our payment
           solutions. There is no doubt that people determine whether company is successful or not.
           All our account managers, programmers, web-designers, senior management team and other
           stuff have considerable experience in payment processing area.
@@ -101,7 +103,7 @@
         :image="require('@/assets/illustrations/illustration_5.png')"
         classes="home-page__promo "
       >
-        <h1 class="heading-2 promo-title">How does Magua Pay manage to be the best?</h1>
+        <h1 class="heading-2 promo-title">How does Fastoo manage to be the best?</h1>
         <p class="paragraph">
           We understand our client's needs, hence we know how to meet their requirements. You can be
           sure that if you inquire about something you will receive a prompt reply. Thanks to our
@@ -151,9 +153,9 @@ export default {
     const informationCards = [
       {
         icon: require('@/assets/icons/information/info-icon-1.svg'),
-        title: 'What is Magua Pay?',
+        title: 'What is Fastoo?',
         description:
-          'Magua Pay is a payment service provider of online merchant accounts with secured and reliable <b>payment gateway.</b>',
+          'Fastoo is a payment service provider of online merchant accounts with secured and reliable <b>payment gateway.</b>',
       },
       {
         icon: require('@/assets/icons/information/info-icon-2.svg'),
@@ -163,9 +165,9 @@ export default {
       },
       {
         icon: require('@/assets/icons/information/info-icon-3.svg'),
-        title: 'Why choose Magua Pay?',
+        title: 'Why choose Fastoo?',
         description:
-          'Magua Pay provides first-rate service along with affordable pricing and high security level. Apply for a <b>merchant account</b> and make sure!',
+          'Fastoo provides first-rate service along with affordable pricing and high security level. Apply for a <b>merchant account</b> and make sure!',
       },
     ];
 

@@ -7,12 +7,12 @@
         <p class="paragraph--md">
           We are constantly developing our company in direction of partnership. Our partner programs
           provide a variety of opportunities that are designed specifically for every business,
-          because Magua Pay has individual approach to every client. We have extensive experience in
+          because Fastoo has individual approach to every client. We have extensive experience in
           credit card processing, so we know how to make cooperation mutually beneficial.
         </p>
         <br />
         <p class="paragraph--md">
-          The payment service provider Magua Pay rewards customers who want to cooperate. It may be
+          The payment service provider Fastoo rewards customers who want to cooperate. It may be
           credit card affiliate programmes, fees reduction, priority support, special bonus packages
           with attractive offers etc. Our partners have a strategic advantage over their competitors
           with good business prospects and possibilities to increase the customer base through a
@@ -20,14 +20,14 @@
         </p>
         <br />
         <p class="paragraph--md">
-          Magua Pay welcomes any type of cooperation with commercial and technical partners and
+          Fastoo welcomes any type of cooperation with commercial and technical partners and
           resellers. It can be acquirers, payment processing companies and other types of partners
           who can help us to make our payment solutions even better. We want to be sure that our
           clients accept card payments online with the best quality of support in merchant services
           industry.
         </p>
 
-        <h3 class="heading-3 section-content__title">Advantages of cooperation with Magua Pay</h3>
+        <h3 class="heading-3 section-content__title">Advantages of cooperation with Fastoo</h3>
         <ul class="list">
           <li class="paragraph--md">
             – Already established working partnership with wide network of acquiring partners. Join
@@ -41,22 +41,22 @@
             industries;
           </li>
           <li class="paragraph--md">
-            – Partnership with Magua Pay gives possibility to start working with new industries.
+            – Partnership with Fastoo gives possibility to start working with new industries.
           </li>
         </ul>
         <p class="paragraph--md">Only by making few steps valuable benefits could be Yours too.</p>
         <br />
         <p class="paragraph--md">
-          Besides this, Magua Pay holds out the hand of comradeship to its clients. In case of
+          Besides this, Fastoo holds out the hand of comradeship to its clients. In case of
           cooperation customers are guaranteed to get a special reward. Proposition suggests credit
           card affiliate programs, fee reductions, priority support, special bonus packages with
           attractive offers etc.
         </p>
 
-        <h3 class="heading-3 section-content__title">Why Magua Pay?</h3>
+        <h3 class="heading-3 section-content__title">Why Fastoo?</h3>
         <p class="paragraph--md">
-          Magua Pay partners are ones, who has made a step towards effective business development.
-          To co-work with Magua Pay team a lot of reasons could be mentioned, involving:
+          Fastoo partners are ones, who has made a step towards effective business development. To
+          co-work with Fastoo team a lot of reasons could be mentioned, involving:
         </p>
         <br />
         <ul class="list">
@@ -69,31 +69,30 @@
           <li class="paragraph--md">– high approval ratio.</li>
         </ul>
 
-        <h3 class="heading-3 section-content__title">Why Magua Pay?</h3>
+        <h3 class="heading-3 section-content__title">Why Fastoo?</h3>
         <br />
         <p class="paragraph--md">
-          In order to let its partners earn more profit with each client, Magua Pay offers special
+          In order to let its partners earn more profit with each client, Fastoo offers special
           exclusive program, so-called individual cooperation program.
         </p>
         <br />
         <p class="paragraph--md">
-          All, that is required, is signing a partnership agreement and providing Magua Pay with
+          All, that is required, is signing a partnership agreement and providing Fastoo with
           potential clients. After clients change status from potential to current, partners obtain
           a reward.
         </p>
         <br />
         <p class="paragraph--md">
-          As well as beneficial advantages Magua Pay partners gain a significant strategic
-          superiority among their competitors, business prosperity and the possibility to increase a
-          customer base through a wide range of accepted payment types. Joint effort is the right
-          track to enhance business and to satisfy all needs of both sides. Become a partner of
-          Magua Pay today!
+          As well as beneficial advantages Fastoo partners gain a significant strategic superiority
+          among their competitors, business prosperity and the possibility to increase a customer
+          base through a wide range of accepted payment types. Joint effort is the right track to
+          enhance business and to satisfy all needs of both sides. Become a partner of Fastoo today!
         </p>
         <br />
         <p class="paragraph--md">
           Joint effort is the right track to enhance business and to satisfy all needs of both
           sides.
-          <br /><b>Become a partner of Magua Pay today!</b>
+          <br /><b>Become a partner of Fastoo today!</b>
         </p>
         <br />
       </div>

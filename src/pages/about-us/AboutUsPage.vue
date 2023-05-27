@@ -5,7 +5,7 @@
       <div class="section-content">
         <h3 class="heading-3 section-content__title">Information about our company</h3>
         <p class="paragraph--md">
-          Magua Pay INC. is a Canadian company, licensed by the standards of Money Service Business
+          Fastoo INC. is a Canadian company, licensed by the standards of Money Service Business
           (MSB) that builds business upon high-quality service and customer's trust, providing that
           individual and attentive approach, immediate reaction to inquiries, readiness to provide
           nothing but the best possible service are the qualities to focus on, because they make us
@@ -13,25 +13,25 @@
         </p>
         <br />
         <p class="paragraph--md">
-          Every person in Magua Pay knows that reputation we have gained through years of
-          conscientious work is our main property. We are sure that such attitude towards clients
-          and partners leads to mutual prosperity and business achievements. Magua Pay's main goal
-          is to continue to prove that our solutions are the most appropriate, the most dependable
-          and, of course, the most affordable. You will never find any kind of hidden fees,
-          concealed charges and deliberate misunderstandings in our offerings.
+          Every person in Fastoo knows that reputation we have gained through years of conscientious
+          work is our main property. We are sure that such attitude towards clients and partners
+          leads to mutual prosperity and business achievements. Fastoo's main goal is to continue to
+          prove that our solutions are the most appropriate, the most dependable and, of course, the
+          most affordable. You will never find any kind of hidden fees, concealed charges and
+          deliberate misunderstandings in our offerings.
         </p>
 
         <h3 class="heading-3 section-content__title">
-          What makes Magua Pay different from other processors?
+          What makes Fastoo different from other processors?
         </h3>
         <p class="paragraph--md">
-          The main difference between Magua Pay and other companies is quality level of our payment
+          The main difference between Fastoo and other companies is quality level of our payment
           solutions. There is no doubt that people determine whether company is successful or not.
           All our account managers, programmers, web-designers, senior management team and other
           stuff have considerable experience in payment processing area.
         </p>
 
-        <h3 class="heading-3 section-content__title">How does Magua Pay manage to be the best?</h3>
+        <h3 class="heading-3 section-content__title">How does Fastoo manage to be the best?</h3>
         <p class="paragraph--md">
           We understand our client's needs, hence we know how to meet their requirements. You can be
           sure that if you inquire about something you will receive a prompt reply. Thanks to our
@@ -49,31 +49,30 @@
           <li class="paragraph--md">– high approval ratio.</li>
         </ul>
 
-        <h3 class="heading-3 section-content__title">Why Magua Pay?</h3>
+        <h3 class="heading-3 section-content__title">Why Fastoo?</h3>
         <br />
         <p class="paragraph--md">
-          In order to let its partners earn more profit with each client, Magua Pay offers special
+          In order to let its partners earn more profit with each client, Fastoo offers special
           exclusive program, so-called individual cooperation program.
         </p>
         <br />
         <p class="paragraph--md">
-          All, that is required, is signing a partnership agreement and providing Magua Pay with
+          All, that is required, is signing a partnership agreement and providing Fastoo with
           potential clients. After clients change status from potential to current, partners obtain
           a reward.
         </p>
         <br />
         <p class="paragraph--md">
-          As well as beneficial advantages Magua Pay partners gain a significant strategic
-          superiority among their competitors, business prosperity and the possibility to increase a
-          customer base through a wide range of accepted payment types. Joint effort is the right
-          track to enhance business and to satisfy all needs of both sides. Become a partner of
-          Magua Pay today!
+          As well as beneficial advantages Fastoo partners gain a significant strategic superiority
+          among their competitors, business prosperity and the possibility to increase a customer
+          base through a wide range of accepted payment types. Joint effort is the right track to
+          enhance business and to satisfy all needs of both sides. Become a partner of Fastoo today!
         </p>
         <br />
         <p class="paragraph--md">
           Joint effort is the right track to enhance business and to satisfy all needs of both
           sides.
-          <br /><b>Become a partner of Magua Pay today!</b>
+          <br /><b>Become a partner of Fastoo today!</b>
         </p>
         <br />
       </div>
