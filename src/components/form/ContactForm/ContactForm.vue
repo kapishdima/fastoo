@@ -3,25 +3,25 @@
     <v-form>
       <template #fields="{}">
         <div class="form-row">
-          <form-field label="Full name" size="md">
+          <form-field :label="$t('Full name')" size="md">
             <input-field variant="filled" />
           </form-field>
-          <form-field label="Email" size="md">
+          <form-field :label="$t('Email')" size="md">
             <input-field variant="filled" />
           </form-field>
         </div>
         <div class="form-row">
-          <form-field label="Phone" size="md">
+          <form-field :label="$t('Phone')" size="md">
             <tel-input variant="filled" />
           </form-field>
-          <form-field label="Subject" size="md">
+          <form-field :label="$t('Subject')" size="md">
             <input-field variant="filled" />
           </form-field>
         </div>
-        <form-field label="Your message" size="md">
+        <form-field :label="$t('Your message')" size="md">
           <textarea-input variant="filled" />
         </form-field>
-        <form-button size="md">Send Message</form-button>
+        <form-button size="md">{{ $t('Send Message') }}</form-button>
       </template>
     </v-form>
   </div>

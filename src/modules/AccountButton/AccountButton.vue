@@ -1,6 +1,6 @@
 <template>
   <router-link :to="{ path: pathes.ACCOUNT }" class="button-link">
-    <v-button v-if="!isMobile()">Account</v-button>
+    <v-button v-if="!isMobile()">{{ $t('Account') }}</v-button>
   </router-link>
   <svg
     v-if="isMobile()"

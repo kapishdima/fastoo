@@ -1,6 +1,8 @@
 .select-field {
   position: relative;
 
+  cursor: pointer;
+
   .selected-input {
     &__placeholder {
       font-family: 'Nunito Sans';
@@ -9,6 +11,27 @@
       font-size: 18px;
 
       color: $dark-secondary;
+    }
+  }
+
+  &--transparent {
+    .form-field__input--filled {
+      background-color: transparent;
+      border: none;
+    }
+
+    .selected-input {
+      font-weight: 500;
+
+      @include tabletSM {
+        font-size: 32px;
+      }
+    }
+
+    .select-field__item-content {
+      @include tabletSM {
+        font-size: 32px;
+      }
     }
   }
 

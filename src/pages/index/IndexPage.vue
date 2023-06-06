@@ -4,26 +4,33 @@
       :image="require('@/assets/illustrations/illustration_1.png')"
       classes="home-page__promo home-page__offset"
     >
-      <h1 class="heading-1 promo-title">We do not miss important details</h1>
+      <h1 class="heading-1 promo-title">{{ $t('We do not miss important details') }}</h1>
       <p class="paragraph promo-text">
-        Individual and careful approach leads to complete understanding of your needs. You will
-        recieve even better payment solution than you expect!
+        {{
+          $t(
+            'Individual and careful approach leads to complete understanding of your needs. You will recieve even better payment solution than you expect!',
+          )
+        }}
       </p>
       <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
-        <v-button>Get started</v-button>
+        <v-button>{{ $t('Get started') }}</v-button>
       </router-link>
     </v-promo>
     <card-list :list="informationCards">
       <template #item="{ item }">
-        <information-card :icon="item.icon" :title="item.title" :description="item.description" />
+        <information-card
+          :icon="item.icon"
+          :title="$t(item.title)"
+          :description="$t(item.description)"
+        />
       </template>
     </card-list>
     <section class="section section--centered">
-      <h2 class="section-title">How to connect</h2>
+      <h2 class="section-title">{{ $t('How to connect') }}</h2>
       <interactions-list />
       <div class="section-actions">
         <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
-          <v-button>Get started</v-button>
+          <v-button>{{ $t('Get started') }}</v-button>
         </router-link>
       </div>
     </section>
@@ -39,10 +46,13 @@
         :reverse="true"
         :has-delimiter="true"
       >
-        <h1 class="heading-2 promo-title">Apply for Fastoo merchant services now!</h1>
+        <h1 class="heading-2 promo-title">{{ $t('Apply for Fastoo merchant services now!') }}</h1>
         <p class="paragraph promo-text">
-          To work with Fastoo processing means to earn money receiving genuine payments through
-          reliable payment gateway.Start accepting credit cards with us and enjoy it!
+          {{
+            $t(
+              'To work with Fastoo processing means to earn money receiving genuine payments through reliable payment gateway.Start accepting credit cards with us and enjoy it!',
+            )
+          }}
         </p>
         <promo-list :list="promoList" />
       </v-promo>
@@ -50,25 +60,24 @@
         :image="isTouchableDevice() ? '' : require('@/assets/illustrations/illustration_3.png')"
         classes="home-page__promo"
       >
-        <h1 class="heading-2 promo-title">Who is Fastoo?</h1>
+        <h1 class="heading-2 promo-title">{{ $t('Who is Fastoo?') }}</h1>
         <p class="paragraph">
-          Fastoo INC. is a Canadian company, licensed by the standards of Money Service Business
-          (MSB) that builds business upon high-quality service and customers’ trust, providing that
-          individual and attentive approach, immediate reaction to inquiries, readiness to provide
-          nothing but the best possible service are the qualities to focus on, because they make us
-          reliable.
+          {{
+            $t(
+              'Fastoo INC. is a Canadian company, licensed by the standards of Money Service Business (MSB) that builds business upon high-quality service and customers’ trust, providing that individual and attentive approach, immediate reaction to inquiries, readiness to provide nothing but the best possible service are the qualities to focus on, because they make us reliable.',
+            )
+          }}
         </p>
         <br />
         <p class="paragraph promo-text">
-          Every person in Fastoo knows that reputation we have gained through years of conscientious
-          work is our main property. We are sure that such attitude towards clients and partners
-          leads to mutual prosperity and business achievements. Fastoo’s main goal is to continue to
-          prove that our solutions are the most appropriate, the most dependable and, of course, the
-          most affordable. You will never find any kind of hidden fees, concealed charges and
-          deliberate misunderstandings in our offerings.
+          {{
+            $t(
+              'Every person in Fastoo knows that reputation we have gained through years of conscientious work is our main property. We are sure that such attitude towards clients and partners leads to mutual prosperity and business achievements. Fastoo’s main goal is to continue to prove that our solutions are the most appropriate, the most dependable and, of course, the most affordable. You will never find any kind of hidden fees, concealed charges and deliberate misunderstandings in our offerings.',
+            )
+          }}
         </p>
         <router-link class="button-link" :to="{ path: pathes.ABOUT_US }">
-          <v-button>About us</v-button>
+          <v-button>{{ $t('About us') }}</v-button>
         </router-link>
       </v-promo>
     </section>
@@ -77,7 +86,7 @@
       <div class="section-decoration"></div>
       <card-list :list="statisticsList">
         <template #item="{ item }">
-          <statistic-card :icon="item.icon" :value="item.value" :title="item.title" />
+          <statistic-card :icon="item.icon" :value="item.value" :title="$t(item.title)" />
         </template>
       </card-list>
     </section>
@@ -89,12 +98,15 @@
         :reverse="true"
         :has-delimiter="true"
       >
-        <h1 class="heading-2 promo-title">What makes Fastoo different from other processors?</h1>
+        <h1 class="heading-2 promo-title">
+          {{ $t('What makes Fastoo different from other processors?') }}
+        </h1>
         <p class="paragraph promo-text">
-          The main difference between Fastoo and other companies is quality level of our payment
-          solutions. There is no doubt that people determine whether company is successful or not.
-          All our account managers, programmers, web-designers, senior management team and other
-          stuff have considerable experience in payment processing area.
+          {{
+            $t(
+              'The main difference between Fastoo and other companies is quality level of our payment solutions. There is no doubt that people determine whether company is successful or not. All our account managers, programmers, web-designers, senior management team and other stuff have considerable experience in payment processing area.',
+            )
+          }}
         </p>
         <promo-list :list="promoList1" :centered="true" />
       </v-promo>
@@ -103,15 +115,18 @@
         :image="require('@/assets/illustrations/illustration_5.png')"
         classes="home-page__promo "
       >
-        <h1 class="heading-2 promo-title">How does Fastoo manage to be the best?</h1>
+        <h1 class="heading-2 promo-title">{{ $t('How does Fastoo manage to be the best?') }}</h1>
         <p class="paragraph">
-          We understand our client's needs, hence we know how to meet their requirements. You can be
-          sure that if you inquire about something you will receive a prompt reply. Thanks to our
-          readiness to maintain close communication with clients we always know how to offer exactly
-          what they want.
+          {{
+            $t(
+              "We understand our client's needs, hence we know how to meet their requirements. You can be sure that if you inquire about something you will receive a prompt reply. Thanks to our readiness to maintain close communication with clients we always know how to offer exactly what they want.",
+            )
+          }}
         </p>
         <br />
-        <p class="paragraph promo-text">Accept payments easily from all sorts of devices:</p>
+        <p class="paragraph promo-text">
+          {{ $t('Accept payments easily from all sorts of devices:') }}
+        </p>
         <promo-list :list="promoList2" :centered="true" />
       </v-promo>
     </section>
@@ -155,19 +170,19 @@ export default {
         icon: require('@/assets/icons/information/info-icon-1.svg'),
         title: 'What is Fastoo?',
         description:
-          'Fastoo is a payment service provider of online merchant accounts with secured and reliable <b>payment gateway.</b>',
+          'Fastoo is a payment service provider of online merchant accounts with secured and reliable payment gateway',
       },
       {
         icon: require('@/assets/icons/information/info-icon-2.svg'),
         title: 'Who are our clients?',
         description:
-          'Our clients are merchants that need online <b>payment solutions</b> and <b>internet acquiring</b> for accepting payments via their website.',
+          'Our clients are merchants that need online payment solutions and internet acquiring for accepting payments via their website.',
       },
       {
         icon: require('@/assets/icons/information/info-icon-3.svg'),
         title: 'Why choose Fastoo?',
         description:
-          'Fastoo provides first-rate service along with affordable pricing and high security level. Apply for a <b>merchant account</b> and make sure!',
+          'Fastoo provides first-rate service along with affordable pricing and high security level. Apply for a merchant account and make sure!',
       },
     ];
 

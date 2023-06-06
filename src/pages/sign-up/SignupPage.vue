@@ -3,7 +3,7 @@
     <section-banner :bg="require('@/assets/section-bg.png')" title="Account" />
     <section class="section-sign-up">
       <div class="section-decoration"></div>
-      <div class="section-sign-up__title heading-2">Sign up</div>
+      <div class="section-sign-up__title heading-2">{{ $t('Sign up') }}</div>
       <interactions-list />
       <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
         <v-button>Get started</v-button>

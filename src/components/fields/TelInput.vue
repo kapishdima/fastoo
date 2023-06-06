@@ -2,7 +2,7 @@
   <input
     v-imask="mask"
     :value="modelValue"
-    :placeholder="placeholder || '+38 (0_ _) _ _ _-_ _-_ _'"
+    :placeholder="placeholder || '+99 (5_ _) _ _ _-_ _-_ _'"
     :name="name"
     :required="required"
     type="tel"

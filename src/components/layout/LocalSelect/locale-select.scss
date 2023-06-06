@@ -1,0 +1,20 @@
+.locale-select {
+  min-width: 150px;
+
+  @include tabletMD {
+    min-width: 130px;
+  }
+
+  @include tabletSM {
+    min-width: 50px;
+    font-size: 24px;
+    
+    .selected-input {
+      font-size: 24px;
+    }
+  }
+
+  .select-field__container.form-field__input--filled {
+    background: transparent;
+  }
+}

@@ -5,10 +5,12 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="faq-title">{{ title }}</div>
+      <div class="faq-title">{{ $t(title) }}</div>
     </div>
     <v-expanded>
-      <div class="faq-content" v-if="expandedId === index" v-html="description"></div>
+      <div class="faq-content" v-if="expandedId === index">
+        <p class="paragraph">{{ $t(description) }}</p>
+      </div>
     </v-expanded>
   </div>
 </template>

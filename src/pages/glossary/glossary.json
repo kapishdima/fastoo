@@ -1,73 +1,73 @@
 {
   "A": [
-    "<b>Account</b> -  is a record of financial transactions for an asset or individual, such as at a bank, brokerage, credit card company or retail store.",
-    "<b>Account balance</b> -  is the amount of money on the account, equal to the net of credits and debits at that point in time for that account.",
-    "<b>Aggregated account</b> -  is the account in the name of a third party. For those, who may have difficulties in obtaining their own account due to the type of business or a poor credit history, aggregated merchant account is the best alternative. In this case a large bank account is created and the merchants funds are processed and then dispersed to the individual merchants.",
-    "<b>Acquiring bank</b> -  is a bank or financial institution that processes credit and or debit card payments for products or services for a merchant.",
-    "<b>API</b> -  is an abbreviation of application program interface, a set of protocols, and tools for building software applications which will give the possibility to accept payments through the website.",
-    "<b>Authentication</b> -  is the process of assuring that a credit card transaction has been initiated by an authorized user of that card. From the merchant’s point of view, authentication means getting the right information from the consumer, and having it verified by the transaction network.",
-    "<b>Authorization code</b> -  is a set of numbers that an issuer or its authorizing processor provides to indicate approval or denial for an authorization request."
+    "Account -  is a record of financial transactions for an asset or individual, such as at a bank, brokerage, credit card company or retail store.",
+    "Account balance -  is the amount of money on the account, equal to the net of credits and debits at that point in time for that account.",
+    "Aggregated account -  is the account in the name of a third party. For those, who may have difficulties in obtaining their own account due to the type of business or a poor credit history, aggregated merchant account is the best alternative. In this case a large bank account is created and the merchants funds are processed and then dispersed to the individual merchants.",
+    "Acquiring bank -  is a bank or financial institution that processes credit and or debit card payments for products or services for a merchant.",
+    "API -  is an abbreviation of application program interface, a set of protocols, and tools for building software applications which will give the possibility to accept payments through the website.",
+    "Authentication -  is the process of assuring that a credit card transaction has been initiated by an authorized user of that card. From the merchant’s point of view, authentication means getting the right information from the consumer, and having it verified by the transaction network.",
+    "Authorization code -  is a set of numbers that an issuer or its authorizing processor provides to indicate approval or denial for an authorization request."
   ],
   "B": [
-    "<b>B2B</b> -  is Business-to-business describes commerce transactions between businesses, such as between a manufacturer and a wholesaler, or between a wholesaler and a retailer.",
-    "<b>Bank card</b> -  is a card that can be used by a cardholder and accepted by a merchant to make a payment for a purchase or in payment of some other obligation.",
-    "<b>Bank statement</b> - is a record, usually sent to the account holder once per month, summarizing all transactions in an account during the time from the previous statement to the current statement. The opening balance from the prior month combined with the net of all transactions during the period should result in the closing balance for the current statement.",
-    "<b>Bank reference letter</b> -  is the information released by a bank about a customer to another bank or lending institution. Bank references generally include number of years of a customer’s relationship with the bank, number of loans and the amounts of their balances, type and quality of collateral(s) provided, and a copy of the customer’s latest statement of financial affairs on file with the bank."
+    "B2B -  is Business-to-business describes commerce transactions between businesses, such as between a manufacturer and a wholesaler, or between a wholesaler and a retailer.",
+    "Bank card -  is a card that can be used by a cardholder and accepted by a merchant to make a payment for a purchase or in payment of some other obligation.",
+    "Bank statement - is a record, usually sent to the account holder once per month, summarizing all transactions in an account during the time from the previous statement to the current statement. The opening balance from the prior month combined with the net of all transactions during the period should result in the closing balance for the current statement.",
+    "Bank reference letter -  is the information released by a bank about a customer to another bank or lending institution. Bank references generally include number of years of a customer’s relationship with the bank, number of loans and the amounts of their balances, type and quality of collateral(s) provided, and a copy of the customer’s latest statement of financial affairs on file with the bank."
   ],
   "C": [
-    "<b>Cardholder</b> -  is a person who holds a credit card or debit card.",
-    "<b>Chargeback</b> -  is the reversal of funds to a customer forcibly initiated by the issuing bank which can be very costly. The most widespread reasons for chargebacks are returned goods, terminated services, disputes, mistakes or fraudulent activities. However, merchants can minimize chargebacks by ensuring customer satisfaction and transaction reliability, publishing his returns policy and providing a high level of support on his website.",
-    "<b>Chargeback period</b> -  is the number of days, from the transaction’s processing date or endorsement date, during which the issuer may initiate a chargeback.",
-    "<b>Code of authentification</b> -  is the set of numbers used to authenticate a message and to provide integrity and authenticity assurances on the transaction.",
-    "<b>Credit card</b> -  is the plastic card bearing an account number assigned to a cardholder. Credit cards are issued with a set credit limit and expiry date.",
-    "<b>Credit card fraud</b> -  is a wide- ranging term for theft and fraud committed using a credit card or any similar payment mechanism as a fraudulent source of funds in a transaction. The purpose may be to obtain goods without paying, or to obtain unauthorized funds from an account. Credit card fraud is also an adjunct to identity theft.",
-    "<b>Credit limit</b> -  is the amount of credit that a financial institution extends to a client. Credit limit also refers to the maximum amount a credit card company will allow someone to borrow on a single card. Credit limits are usually determined based on information contained in the application of the person seeking credit, or that person’s credit rating.",
-    "<b>Сreation of merchant account</b> -  is a step-by-step process to integrate the payment gateway to the online shop and have the possibility to start accepting payments via credit and debit cards.",
-    "<b>CVV</b> -  is one of the credit card industry’s several acronyms for the credit card security code that helps verify the legitimacy of a credit card. Depending on the card, the security code can be a three-digit or four-digit number, printed on either on the back of the card or the front. CVV stands for “card verification value” code. Other card issuers call their security codes CVV2 (Visa), CVC2 (MasterCard) or CID (American Express)."
+    "Cardholder -  is a person who holds a credit card or debit card.",
+    "Chargeback -  is the reversal of funds to a customer forcibly initiated by the issuing bank which can be very costly. The most widespread reasons for chargebacks are returned goods, terminated services, disputes, mistakes or fraudulent activities. However, merchants can minimize chargebacks by ensuring customer satisfaction and transaction reliability, publishing his returns policy and providing a high level of support on his website.",
+    "Chargeback period -  is the number of days, from the transaction’s processing date or endorsement date, during which the issuer may initiate a chargeback.",
+    "Code of authentification -  is the set of numbers used to authenticate a message and to provide integrity and authenticity assurances on the transaction.",
+    "Credit card -  is the plastic card bearing an account number assigned to a cardholder. Credit cards are issued with a set credit limit and expiry date.",
+    "Credit card fraud -  is a wide- ranging term for theft and fraud committed using a credit card or any similar payment mechanism as a fraudulent source of funds in a transaction. The purpose may be to obtain goods without paying, or to obtain unauthorized funds from an account. Credit card fraud is also an adjunct to identity theft.",
+    "Credit limit -  is the amount of credit that a financial institution extends to a client. Credit limit also refers to the maximum amount a credit card company will allow someone to borrow on a single card. Credit limits are usually determined based on information contained in the application of the person seeking credit, or that person’s credit rating.",
+    "Сreation of merchant account -  is a step-by-step process to integrate the payment gateway to the online shop and have the possibility to start accepting payments via credit and debit cards.",
+    "CVV -  is one of the credit card industry’s several acronyms for the credit card security code that helps verify the legitimacy of a credit card. Depending on the card, the security code can be a three-digit or four-digit number, printed on either on the back of the card or the front. CVV stands for “card verification value” code. Other card issuers call their security codes CVV2 (Visa), CVC2 (MasterCard) or CID (American Express)."
   ],
   "D": [
-    "<b>Data breach</b> occurs when hackers snatch credit card information that could be used to commit fraud or identity theft. Increasingly, data breaches occur at computing choke points through which many thousands of pieces of financial data must pass.",
-    "<b>Debit card</b> -  is a plastic card used to complete a bank account withdrawal from a cardholder’s bank account. Unlike a credit card, debit card purchases are deducted automatically from the cardholder’s account.",
-    "<b>Discount rate</b> -  is the rate is the fee paid by merchants to credit card processor as a fee associated with accepting general-use credit cards (such as Visa, MasterCard, American Express and Discover).",
-    "<b>Direct account or dedicated merchant account</b> -  is merchant’ s exclusive and fully controlled account not shared with other merchants. It is a flexible option with less processing fees which will give you a lot of benefits. To get it the merchant must satisfy all the requirements and provide the requirements with full package of documents."
+    "Data breach occurs when hackers snatch credit card information that could be used to commit fraud or identity theft. Increasingly, data breaches occur at computing choke points through which many thousands of pieces of financial data must pass.",
+    "Debit card -  is a plastic card used to complete a bank account withdrawal from a cardholder’s bank account. Unlike a credit card, debit card purchases are deducted automatically from the cardholder’s account.",
+    "Discount rate -  is the rate is the fee paid by merchants to credit card processor as a fee associated with accepting general-use credit cards (such as Visa, MasterCard, American Express and Discover).",
+    "Direct account or dedicated merchant account -  is merchant’ s exclusive and fully controlled account not shared with other merchants. It is a flexible option with less processing fees which will give you a lot of benefits. To get it the merchant must satisfy all the requirements and provide the requirements with full package of documents."
   ],
   "E": [
-    "<b>E-commerce (commonly known as e-commerce or eCommerce)</b> -  is a type of industry where the buying and selling of products or services is conducted over electronic systems such as the Internet and other computer networks.",
-    "<b>Expiration date</b> -  is a date when bank card ceases to be effective or operative."
+    "E-commerce (commonly known as e-commerce or eCommerce) -  is a type of industry where the buying and selling of products or services is conducted over electronic systems such as the Internet and other computer networks.",
+    "Expiration date -  is a date when bank card ceases to be effective or operative."
   ],
   "I": [
-    "<b>Issuing bank</b> -  is a bank that offers card association branded payment cards directly to consumers. The name is derived from the fact that it issues payment to the acquiring bank on behalf of its customer (the purchaser in the transaction)."
+    "Issuing bank -  is a bank that offers card association branded payment cards directly to consumers. The name is derived from the fact that it issues payment to the acquiring bank on behalf of its customer (the purchaser in the transaction)."
   ],
   "M": [
-    "<b>Magnetic stripe</b> -  is a type of card capable of storing data by modifying the magnetism of tiny iron-based magnetic particles on a band of magnetic material on the card. The magnetic stripe, sometimes called swipe card or magstripe, is read by swiping past amagnetic reading head.",
-    "<b>MasterCard Secure</b> -  is a service to enhance your existing MasterCard account. A private code means added protection against unauthorized use of your card when you shop at participating online retailers.",
-    "<b>Memory card or smart card</b> -  is a chip card is a plastic card that has a computer chip implanted into it that enables the card to perform certain functions. These could include financial transactions, security system access, and storage of medical or other records.",
-    "<b>Merchant</b> -  is the owner of online business that accepts credit card payments."
+    "Magnetic stripe -  is a type of card capable of storing data by modifying the magnetism of tiny iron-based magnetic particles on a band of magnetic material on the card. The magnetic stripe, sometimes called swipe card or magstripe, is read by swiping past amagnetic reading head.",
+    "MasterCard Secure -  is a service to enhance your existing MasterCard account. A private code means added protection against unauthorized use of your card when you shop at participating online retailers.",
+    "Memory card or smart card -  is a chip card is a plastic card that has a computer chip implanted into it that enables the card to perform certain functions. These could include financial transactions, security system access, and storage of medical or other records.",
+    "Merchant -  is the owner of online business that accepts credit card payments."
   ],
   "O": [
-    "<b>Order form</b> -  is special form on the website where customer enter his credit card details to make a purchase."
+    "Order form -  is special form on the website where customer enter his credit card details to make a purchase."
   ],
   "P": [
-    "<b>Payment gateway</b> -  is an e-commerce application service provider that automates the payment transaction between the customer and merchant. It is usually a third-party service that is actually a system of computer processes that process, verify, and accept or decline credit card transactions on behalf of the merchant through secure Internet connections. The payment gateway is the infrastructure that allows a merchant to accept credit card and other forms of electronic payment.",
-    "<b>Payout</b> -  is the expected financial return from an investment over a given period of time. Payout may be expressed on an overall or periodic basis as either a percentage of the investment’s cost or in a real dollar amount. Payout can also refer to the period of time in which an investment or a project is expected to recoup its initial capital investment and become minimally profitable.",
-    "<b>PCI DSS(The Payment Card Industry Data Security Standard)</b> -  is a proprietary information security standard for organizations that handle cardholder information for the major debit,credit, prepaid, e-purse, ATM, and POS cards. This standard was created to increase controls around cardholder data to reduce credit card fraud via its exposure.",
-    "<b>Pre-authorisation</b> -  is the practice within the banking industry of authorizing electronic transactions done with a debit card or credit card and holding this balance as unavailable either until the merchant clears the transaction, or the hold “falls off.” In the case of debit cards, authorization holds can fall off the account anywhere from 1–5 days after the transaction date depending on the bank’s policy; in the case of credit cards, holds may last as long as 30 days, depending on the issuing bank.",
-    "<b>Processing center</b> -  is a corporation or financial institution that acts as an intermediary between merchants and customers. This sort of entity mainly handles credit card processing for other companies. Acquirers are paid a certain percentage of each transaction along with any fees that the institution may impose on merchants."
+    "Payment gateway -  is an e-commerce application service provider that automates the payment transaction between the customer and merchant. It is usually a third-party service that is actually a system of computer processes that process, verify, and accept or decline credit card transactions on behalf of the merchant through secure Internet connections. The payment gateway is the infrastructure that allows a merchant to accept credit card and other forms of electronic payment.",
+    "Payout -  is the expected financial return from an investment over a given period of time. Payout may be expressed on an overall or periodic basis as either a percentage of the investment’s cost or in a real dollar amount. Payout can also refer to the period of time in which an investment or a project is expected to recoup its initial capital investment and become minimally profitable.",
+    "PCI DSS(The Payment Card Industry Data Security Standard) -  is a proprietary information security standard for organizations that handle cardholder information for the major debit,credit, prepaid, e-purse, ATM, and POS cards. This standard was created to increase controls around cardholder data to reduce credit card fraud via its exposure.",
+    "Pre-authorisation -  is the practice within the banking industry of authorizing electronic transactions done with a debit card or credit card and holding this balance as unavailable either until the merchant clears the transaction, or the hold “falls off.” In the case of debit cards, authorization holds can fall off the account anywhere from 1–5 days after the transaction date depending on the bank’s policy; in the case of credit cards, holds may last as long as 30 days, depending on the issuing bank.",
+    "Processing center -  is a corporation or financial institution that acts as an intermediary between merchants and customers. This sort of entity mainly handles credit card processing for other companies. Acquirers are paid a certain percentage of each transaction along with any fees that the institution may impose on merchants."
   ],
   "R": [
-    "<b>Refund</b> -  is made in case of order cancellation and there are various reasons why customers may wish to return merchandise or service. A refund can be for any purpose, like defectiveness of goods, mistaken purchase of the unsuitable product or personal dissatisfaction. But regardless the reason of initiated refund, it is always between the merchant and its customer.",
-    "<b>Recurring payment</b> -  is made automatically at regular intervals. Here is an example. A customer purchases a membership with a monthly cycle type. The order is set up and recurs every month and the customer’s credit card is automatically charged to process following payments in a fixed schedule.",
-    "<b>Rolling reserve</b> -  is some percentage of a merchant’s funds in his merchant account that is held by the merchant account provider as security for future contingencies, including chargebacks."
+    "Refund -  is made in case of order cancellation and there are various reasons why customers may wish to return merchandise or service. A refund can be for any purpose, like defectiveness of goods, mistaken purchase of the unsuitable product or personal dissatisfaction. But regardless the reason of initiated refund, it is always between the merchant and its customer.",
+    "Recurring payment -  is made automatically at regular intervals. Here is an example. A customer purchases a membership with a monthly cycle type. The order is set up and recurs every month and the customer’s credit card is automatically charged to process following payments in a fixed schedule.",
+    "Rolling reserve -  is some percentage of a merchant’s funds in his merchant account that is held by the merchant account provider as security for future contingencies, including chargebacks."
   ],
   "S": [
-    "<b>Settlement period</b> -  is time between the settlement date and the transaction date that is allotted to the parties of a transaction to satisfy the transaction’s obligations. The buyer must make payment within the settlement period, while the seller must deliver the purchased security within this period.",
-    "<b>Skimming</b> -  is the theft of credit card information used in an otherwise legitimate transaction. The thief can procure a victim’s credit card number using basic methods such as photocopying receipts or more advanced methods such as using a small electronic device (skimmer) to swipe and store hundreds of victims’ credit card numbers.",
-    "<b>SSL</b> -  is a secure web protocol designed to ensure cardholder information is safe during the ordering process."
+    "Settlement period -  is time between the settlement date and the transaction date that is allotted to the parties of a transaction to satisfy the transaction’s obligations. The buyer must make payment within the settlement period, while the seller must deliver the purchased security within this period.",
+    "Skimming -  is the theft of credit card information used in an otherwise legitimate transaction. The thief can procure a victim’s credit card number using basic methods such as photocopying receipts or more advanced methods such as using a small electronic device (skimmer) to swipe and store hundreds of victims’ credit card numbers.",
+    "SSL -  is a secure web protocol designed to ensure cardholder information is safe during the ordering process."
   ],
   "T": [
-    "<b>Transaction fee</b> -  is per- transaction charge that a merchant provider or processor charges merchants for each transaction processed."
+    "Transaction fee -  is per- transaction charge that a merchant provider or processor charges merchants for each transaction processed."
   ],
   "V": [
-    "<b>Virtual terminal</b> -   is a service that allows manual processing of credit card transactions through means of an electronic connections"
+    "Virtual terminal -   is a service that allows manual processing of credit card transactions through means of an electronic connections"
   ]
 }

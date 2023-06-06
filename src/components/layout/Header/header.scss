@@ -15,20 +15,10 @@
   &-logo {
     display: block;
 
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 200px;
+    max-width: 200px;
 
     object-fit: cover;
-
-    @include desctop {
-      min-width: 200px;
-      max-width: 200px;
-    }
-
-    @include tabletMD {
-      min-width: 200px;
-      max-width: 200px;
-    }
 
     @include mobile {
       min-width: 85px;
@@ -93,7 +83,7 @@
 
   &-menu {
     display: flex;
-    column-gap: 50px;
+    column-gap: 36px;
 
     @include desctop {
       column-gap: 24px;
@@ -205,7 +195,7 @@
       font-family: 'Inter';
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 150%;
       text-decoration: none;
 

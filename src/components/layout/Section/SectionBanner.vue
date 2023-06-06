@@ -5,10 +5,12 @@
     </div>
     <div class="section-banner-overlay"></div>
     <div class="section-banner__content">
-      <h2 class="section-banner__title">{{ title }}</h2>
+      <h2 class="section-banner__title">{{ $t(title) }}</h2>
       <div class="section-banner__breadcrumbs" v-if="hasBreadcrumbs">
-        <router-link :to="{ path: pathes.INDEX }" class="breadcrums-link"> Home </router-link>
-        <div class="breadcrums-link active">{{ title }}</div>
+        <router-link :to="{ path: pathes.INDEX }" class="breadcrums-link">
+          {{ $t('Home') }}
+        </router-link>
+        <div class="breadcrums-link active">{{ $t(title) }}</div>
       </div>
     </div>
   </div>

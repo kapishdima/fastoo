@@ -3,7 +3,9 @@
     <section-banner :bg="require('@/assets/section-bg.png')" title="Contact us" />
     <contacts-list />
     <section class="section-contacts-form">
-      <h3 class="heading-3 section-contacts-form__title">Drop us message for any query</h3>
+      <h3 class="heading-3 section-contacts-form__title">
+        {{ $t('Drop us message for any query') }}
+      </h3>
       <div class="section-decoration"></div>
       <contact-form />
     </section>

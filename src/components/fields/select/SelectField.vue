@@ -4,6 +4,8 @@
     :class="{
       'select-field--active': opened,
       'select-field--disabled': disabled,
+      [`select-field--${variant}`]: true,
+      [classes]: true,
     }"
     ref="selectField"
   >
@@ -36,7 +38,7 @@
 import OptionItem from './OptionItem.vue';
 export default {
   emits: ['update:modelValue'],
-  props: ['name', 'options', 'modelValue', 'disabled', 'size', 'placeholder'],
+  props: ['name', 'options', 'modelValue', 'disabled', 'size', 'placeholder', 'classes', 'variant'],
 
   components: {
     OptionItem,

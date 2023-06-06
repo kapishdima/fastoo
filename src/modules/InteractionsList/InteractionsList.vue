@@ -3,30 +3,30 @@
     <template #item="{ item, index }">
       <interaction-card
         :index="item.index"
-        :title="item.title"
-        :subtitle="item.subtitle"
+        :title="$t(item.title)"
+        :subtitle="$t(item.subtitle)"
         :icon="item.icon"
         v-if="index !== 0"
       />
       <interaction-card
         :index="item.index"
-        :title="item.title"
-        :subtitle="item.subtitle"
+        :title="$t(item.title)"
+        :subtitle="$t(item.subtitle)"
         v-if="index === 0"
       >
         <template #extra>
-          <v-form subtitle="Submit application">
+          <v-form :subtitle="$t('Submit application')">
             <template #fields>
-              <form-field label="Your number">
+              <form-field :label="$t('Your number')">
                 <tel-input />
               </form-field>
 
-              <form-field label="Email">
+              <form-field :label="$t('Email')">
                 <input-field />
               </form-field>
 
               <div class="form-actions">
-                <form-button>Send Message</form-button>
+                <form-button>{{ $t('Send Message') }}</form-button>
               </div>
             </template>
           </v-form>

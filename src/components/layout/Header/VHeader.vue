@@ -7,11 +7,11 @@
         <div class="header-menu" :class="{ opened: menuOpened }">
           <template v-for="{ path, title, children } of menu" :key="title">
             <router-link :to="{ path }" class="header-menu__link" v-if="!Boolean(children)">
-              {{ title }}
+              {{ $t(title) }}
             </router-link>
             <div class="header-menu__link" v-if="Boolean(children)">
               <span class="header-menu__link-label" @click="setActiveDropdownId(title)">
-                {{ title }} <img src="@/assets/icons/angle-down_i.svg" alt="" />
+                {{ $t(title) }} <img src="@/assets/icons/angle-down_i.svg" alt="" />
               </span>
               <div class="header-menu__dropdown" :class="{ opened: activeDropdownId === title }">
                 <router-link
@@ -20,7 +20,7 @@
                   :to="{ path: child.path }"
                   class="header-menu__dropdown-item"
                 >
-                  {{ child.title }}
+                  {{ $t(child.title) }}
                 </router-link>
               </div>
             </div>
@@ -28,6 +28,8 @@
         </div>
 
         <div class="header-end">
+          <locales-select />
+
           <div
             class="header-menu__burger"
             :class="{ opened: menuOpened }"
@@ -47,6 +49,7 @@
 <script>
 import VContainer from '../Container/VContainer.vue';
 import AccountButton from '@/modules/AccountButton/AccountButton.vue';
+import LocalesSelect from '../LocalSelect/LocalSelect.vue';
 import { isTouchableDevice, isMobile } from '@/app/media-query/media-query';
 import { pathes, menu } from '@/app/router';
 
@@ -58,6 +61,7 @@ export default {
   components: {
     AccountButton,
     VContainer,
+    LocalesSelect,
   },
 
   data() {

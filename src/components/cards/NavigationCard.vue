@@ -7,7 +7,7 @@
       :to="{ path: item.path }"
       :class="index === activeIndex ? 'navigation-card__item--active' : ''"
     >
-      {{ item.label }}
+      {{ $t(item.label) }}
     </router-link>
   </div>
 </template>
