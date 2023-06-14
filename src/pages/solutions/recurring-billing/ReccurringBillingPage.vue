@@ -14,7 +14,7 @@
         <p class="paragraph--md">
           {{
             $t(
-              'In case you sell products and services on a recurring payments basis you can seriously ease and protect your business. RegularPay automatic recurring billing service drastically decreases your efforts spent on processing of customers’ payments allowing your clients to simply type their card details once, thereby agree that all following payments will be took out from their accounts at a certain time.',
+              'In case you sell products and services on a recurring payments basis you can seriously ease and protect your business.   automatic recurring billing service drastically decreases your efforts spent on processing of customers’ payments allowing your clients to simply type their card details once, thereby agree that all following payments will be took out from their accounts at a certain time.',
             )
           }}
         </p>
@@ -22,7 +22,7 @@
         <p class="paragraph--md">
           {{
             $t(
-              'Moreover, using this recurring billing service you can be sure that all due payments will be passed on time, hence there is no need to remind your clients about terms of payments. You will not miss any payment while working with RegularPay.',
+              'Moreover, using this recurring billing service you can be sure that all due payments will be passed on time, hence there is no need to remind your clients about terms of payments. You will not miss any payment while working with  .',
             )
           }}
         </p>

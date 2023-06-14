@@ -27,12 +27,12 @@
         <p class="paragraph--md">
           {{
             $t(
-              'RegularPay multicurrency processing solution is strong and profitable owing to close business relations with partners worldwide who are as dedicated to merchants needs as we are. Using the possibility to pay in own currency your customers are sure now that there are no secret charges or additional fees concerned with conversion. List of processing currencies: *',
+              '  multicurrency processing solution is strong and profitable owing to close business relations with partners worldwide who are as dedicated to merchants needs as we are. Using the possibility to pay in own currency your customers are sure now that there are no secret charges or additional fees concerned with conversion. List of processing currencies: *',
             )
           }}
         </p>
         <br />
-        <img src="@/assets/illustrations/solutions/solution-2.jpg" alt="" class="section-image" />
+        <img src="@/assets/illustrations/solutions/solution-2.svg" alt="" class="section-image" />
         <p class="paragraph--md">
           {{ $t('* – processing currencies depend on payment solution') }}
         </p>
@@ -40,7 +40,7 @@
         <p class="paragraph--md">
           {{
             $t(
-              'RegularPay developers have worked out an innovative option for international payments. This step forward brings convenience for all participants of transaction. As a result, payment process became faster and more efficient.',
+              '  developers have worked out an innovative option for international payments. This step forward brings convenience for all participants of transaction. As a result, payment process became faster and more efficient.',
             )
           }}
         </p>
