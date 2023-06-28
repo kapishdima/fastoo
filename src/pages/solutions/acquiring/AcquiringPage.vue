@@ -23,7 +23,7 @@
           {{ $t('The principle of Fastoo Internet acquiring work') }}
         </h3>
         <img
-          src="@/assets/illustrations/solutions/credit-card/illustation_1.png"
+          src="@/assets/illustrations/solutions/credit-card/illustation_1.svg"
           alt=""
           class="section-image"
         />
