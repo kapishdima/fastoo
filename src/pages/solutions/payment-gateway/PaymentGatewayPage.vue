@@ -20,7 +20,7 @@
         </p>
         <br />
         <img
-          src="@/assets/illustrations/solutions/credit-card/illustation_2.png"
+          src="@/assets/illustrations/solutions/credit-card/illustation_2.svg"
           alt=""
           class="section-image"
         />
