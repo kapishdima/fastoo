@@ -131,7 +131,7 @@
       </v-promo>
     </section>
 
-    <section class="section-partners">
+    <!-- <section class="section-partners">
       <div class="partner-item">
         <img src="@/assets/partners/partner-1.png" alt="" />
       </div>
@@ -147,7 +147,7 @@
       <div class="partner-item">
         <img src="@/assets/partners/partner-5.png" alt="" />
       </div>
-    </section>
+    </section> -->
   </v-page>
 </template>
 
@@ -210,22 +210,22 @@ export default {
     const statisticsList = [
       {
         icon: require('@/assets/icons/statistics/statistic-1.svg'),
-        value: '2,763',
+        value: '530',
         title: 'Happy customers',
       },
       {
         icon: require('@/assets/icons/statistics/statistic-2.svg'),
-        value: '10',
+        value: '1',
         title: 'Years in payments',
       },
       {
         icon: require('@/assets/icons/statistics/statistic-3.svg'),
-        value: '13',
+        value: '3',
         title: 'Our branches',
       },
       {
         icon: require('@/assets/icons/statistics/statistic-4.svg'),
-        value: '341',
+        value: '13',
         title: 'Merchants',
       },
     ];
