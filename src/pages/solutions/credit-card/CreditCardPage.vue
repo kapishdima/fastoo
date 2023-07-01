@@ -108,28 +108,11 @@ import SectionBanner from '@/components/layout/Section/SectionBanner.vue';
 
 import NavigationCard from '@/components/cards/NavigationCard.vue';
 
-import { pathes } from '@/app/router';
-
 export default {
   components: {
     VPage,
     SectionBanner,
     NavigationCard,
-  },
-
-  setup() {
-    const navigationList = [
-      { path: pathes.SOLUTION_PAYMENTS, label: 'Payment Solutions System from Fastoo' },
-      { path: pathes.SOLUTION_CREDIT_CARD, label: 'Credit Card Processing' },
-      { path: pathes.SOLUTION_ACQUIRING, label: 'Internet Acquiring Solution' },
-      { path: pathes.SOLUTION_PAYMENT_GATEWAY, label: 'Payment Gateway' },
-      { path: pathes.SOLUTION_RECURRING_BILLING, label: 'Recurring Billing service' },
-      { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, label: 'Multicurrency Processing' },
-    ];
-
-    return {
-      navigationList,
-    };
   },
 };
 </script>

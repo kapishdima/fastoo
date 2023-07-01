@@ -20,6 +20,7 @@ import AcquiringPage from '@/pages/solutions/acquiring/AcquiringPage.vue';
 import PaymentGatewayPage from '@/pages/solutions/payment-gateway/PaymentGatewayPage.vue';
 import RecurringBillingPage from '@/pages/solutions/recurring-billing/ReccurringBillingPage.vue';
 import MulticurrencyProcessing from '@/pages/solutions/multicurrency-processing/MulticurrencyProccessingPage.vue';
+import ComingSoonPage from '@/pages/solutions/coming-soon/ComingSoonPage.vue';
 
 export const pathes = {
   INDEX: '/',
@@ -43,6 +44,7 @@ export const pathes = {
   SOLUTION_PAYMENT_GATEWAY: '/solutions/payment-gateway',
   SOLUTION_RECURRING_BILLING: '/solutions/recurring-billing',
   SOLUTION_MULTICURRENCY_PROCESSING: '/solutions/multicurrency-processing',
+  SOLUTION_COMING_SOON: '/solutions/coming-soon',
 };
 
 const routes = [
@@ -64,6 +66,7 @@ const routes = [
   { path: pathes.SOLUTION_PAYMENT_GATEWAY, component: PaymentGatewayPage },
   { path: pathes.SOLUTION_RECURRING_BILLING, component: RecurringBillingPage },
   { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, component: MulticurrencyProcessing },
+  { path: pathes.SOLUTION_COMING_SOON, component: ComingSoonPage },
 ];
 
 export const menu = [
@@ -78,6 +81,7 @@ export const menu = [
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, title: 'Payment Gateway' },
       { path: pathes.SOLUTION_RECURRING_BILLING, title: 'Recurring Billing service' },
       { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, title: 'Multicurrency Processing' },
+      { path: pathes.SOLUTION_COMING_SOON, title: 'Coming soon' },
     ],
   },
   { path: pathes.PARTNERS, title: 'Partners' },
@@ -93,6 +97,10 @@ export const menu = [
   { path: pathes.CONTACTS, title: 'Contact Us' },
   { path: pathes.PAYMENT, title: 'Payment' },
 ];
+
+export const getSolutionsMenu = () => {
+  return menu[1];
+};
 
 export const router = createRouter({
   history: createWebHashHistory(),

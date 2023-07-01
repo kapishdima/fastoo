@@ -3,18 +3,24 @@
     <router-link
       class="navigation-card__item"
       v-for="(item, index) of list"
-      :key="item.label"
+      :key="item.title"
       :to="{ path: item.path }"
       :class="index === activeIndex ? 'navigation-card__item--active' : ''"
     >
-      {{ $t(item.label) }}
+      {{ $t(item.title) }}
     </router-link>
   </div>
 </template>
 
 <script>
+import { getSolutionsMenu } from '@/app/router';
 export default {
-  props: ['list', 'activeIndex'],
+  props: ['activeIndex'],
+  setup() {
+    const list = getSolutionsMenu().children;
+
+    return { list };
+  },
 };
 </script>
 
