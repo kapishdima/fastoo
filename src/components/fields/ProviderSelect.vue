@@ -1,5 +1,5 @@
 <template>
-  <select-field :options="options" placeholder="Select provider" />
+  <select-field :options="options" :placeholder="$t('Select provider')" />
 </template>
 
 <script>

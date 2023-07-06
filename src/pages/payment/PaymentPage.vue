@@ -11,45 +11,45 @@
         <v-form>
           <template #fields="{}">
             <div class="form-row">
-              <form-field size="md" label="Your firstname*">
-                <input-field variant="filled" placeholder="Enter your firstname" />
+              <form-field size="md" :label="$t('Your firstname*')">
+                <input-field variant="filled" :placeholder="$t('Enter your firstname')" />
               </form-field>
-              <form-field size="md" label="Your lastname*">
-                <input-field variant="filled" placeholder="Enter your lastname" />
+              <form-field size="md" :label="$t('Your lastname*')">
+                <input-field variant="filled" :placeholder="$t('Enter your lastname')" />
               </form-field>
             </div>
             <div class="form-row">
-              <form-field size="md" label="Email*">
+              <form-field size="md" :label="$t('Email*')">
                 <input-field variant="filled" placeholder="test@test.com" />
               </form-field>
-              <form-field size="md" label="Phone number* (without +)">
+              <form-field size="md" :label="$t('Phone number* (without +)')">
                 <input-field variant="filled" placeholder="795111114669" />
               </form-field>
             </div>
             <div class="form-row">
-              <form-field size="md" label="Country*">
-                <input-field variant="filled" placeholder="Enter country" />
+              <form-field size="md" :label="$t('Country*')">
+                <input-field variant="filled" :placeholder="$t('Enter country')" />
               </form-field>
-              <form-field size="md" label="State/City*">
-                <input-field variant="filled" placeholder="Enter your state / city" />
-              </form-field>
-            </div>
-            <div class="form-row">
-              <form-field size="md" label="Address*">
-                <input-field variant="filled" placeholder="Enter your address" />
-              </form-field>
-              <form-field size="md" label="ZIP Code*">
-                <input-field variant="filled" placeholder="Enter your ZIP code" />
+              <form-field size="md" :label="$t('State/City*')">
+                <input-field variant="filled" :placeholder="$t('Enter your state / city')" />
               </form-field>
             </div>
             <div class="form-row">
-              <form-field size="md" label="Select a game">
+              <form-field size="md" :label="$t('Address*')">
+                <input-field variant="filled" :placeholder="$t('Enter your address')" />
+              </form-field>
+              <form-field size="md" :label="$t('ZIP Code*')">
+                <input-field variant="filled" :placeholder="$t('Enter your ZIP code')" />
+              </form-field>
+            </div>
+            <div class="form-row">
+              <form-field size="md" :label="$t('Select a game*')">
                 <provider-select />
               </form-field>
-              <form-field size="md" label="Your nickname*">
-                <input-field variant="filled" placeholder="Enter your nickname" />
+              <form-field size="md" :label="$t('Your nickname*')">
+                <input-field variant="filled" :placeholder="$t('Enter your nickname')" />
               </form-field>
-              <form-field size="md" label="Deposit* (MIN 1 EUR)">
+              <form-field size="md" :label="$t('Deposit* (MIN 1 EUR)')">
                 <input-field variant="filled" placeholder="10.25">
                   <template #preffix>
                     <div class="form-field__currency">EUR</div>
@@ -58,25 +58,25 @@
               </form-field>
             </div>
             <div class="form-row">
-              <form-field size="md" label="First and last name on the CC*">
+              <form-field size="md" :label="$t('First and last name on the CC*')">
                 <input-field variant="filled" placeholder="CARDHOLDER" />
               </form-field>
-              <form-field size="md" label="Credit card number*">
+              <form-field size="md" :label="$t('Credit card number*')">
                 <input-field variant="filled" placeholder="1111222233334444" />
               </form-field>
             </div>
             <div class="form-row">
-              <form-field size="md" label="Month from the CC*">
+              <form-field size="md" :label="$t('Month from the CC*')">
                 <month-select />
               </form-field>
-              <form-field size="md" label="Year from the CC*">
+              <form-field size="md" :label="$t('Year from the CC*')">
                 <years-select />
               </form-field>
-              <form-field size="md" label="CVV Code*">
+              <form-field size="md" :label="$t('CVV Code*')">
                 <input-field variant="filled" placeholder="123" />
               </form-field>
             </div>
-            <form-button size="md">Make a payment</form-button>
+            <form-button size="md">{{ $t('Make a payment') }}</form-button>
           </template>
         </v-form>
       </div>
