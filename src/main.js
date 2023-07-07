@@ -17,7 +17,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: window.localStorage.getItem('locale') || 'gu', // set locale
+  locale: window.localStorage.getItem('locale') || 'ge', // set locale
   fallbackLocale: 'en', // set fallback locale
   messages, // set locale messages
 });
