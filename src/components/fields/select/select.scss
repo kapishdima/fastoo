@@ -12,6 +12,16 @@
 
       color: $dark-secondary;
     }
+
+    &__field {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+
+      img {
+        width: 16px;
+      }
+    }
   }
 
   &--transparent {
@@ -69,6 +79,11 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+
+    column-gap: 10px;
+
     padding: 10px 18px;
 
     font-family: 'Nunito Sans';
@@ -81,6 +96,10 @@
     color: $dark-primary;
 
     cursor: pointer;
+
+    img {
+      width: 16px;
+    }
   }
 }
 

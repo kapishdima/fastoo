@@ -8,6 +8,7 @@
       [classes]: true,
     }"
     ref="selectField"
+    v-click-outside="close"
   >
     <div
       class="select-field__container form-field__input form-field__input--filled"
@@ -19,6 +20,7 @@
             {{ placeholder }}
           </span>
           {{ selectedLabel }}
+          <img :src="selected?.icon" v-if="selected?.icon" alt="" />
         </div>
       </div>
     </div>
@@ -49,11 +51,13 @@ export default {
       opened: false,
       value: this.modelValue || '',
       selectedLabel: '',
+
       selected: null,
     };
   },
 
   mounted() {
+    console.log(this.options);
     document.addEventListener('keydown', this.onEscapePressed);
   },
 

@@ -6,6 +6,7 @@
         <span class="select-field__item-hint">{{ option.hint }}</span>
       </div>
     </div>
+    <img :src="option.icon" alt="" v-if="option.icon" />
   </div>
 </template>
 

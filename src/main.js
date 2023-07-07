@@ -24,6 +24,20 @@ const i18n = createI18n({
 
 const app = createApp(App);
 
+app.directive('click-outside', {
+  mounted: function (el, binding) {
+    el.onOutsideClick = (event) => {
+      if (!(el == event.target || el.contains(event.target))) {
+        binding.value(event);
+      }
+    };
+    document.body.addEventListener('click', el.onOutsideClick);
+  },
+  beforeUnmount: function (el) {
+    document.body.removeEventListener('click', el.onOutsideClick);
+  },
+});
+
 app.use(i18n);
 app.use(router);
 app.mount('#app');

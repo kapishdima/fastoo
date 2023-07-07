@@ -10,6 +10,7 @@
 <script>
 import SelectField from '@/components/fields/select/SelectField.vue';
 import { isTablet } from '@/app/media-query/media-query';
+
 export default {
   components: {
     SelectField,
@@ -19,10 +20,10 @@ export default {
     locales() {
       if (isTablet()) {
         return this.$i18n.availableLocales.map((locale) => {
-          console.log(this.$i18n.t(locale).split(' ')[1]);
           return {
             label: this.$i18n.t(locale).split(' ')[1],
             value: locale.split(' ')[0],
+            icon: require(`@/assets/icons/flags/${locale.split(' ')[0]}.svg`),
           };
         });
       }
@@ -30,6 +31,7 @@ export default {
       return this.$i18n.availableLocales.map((locale) => ({
         label: this.$i18n.t(locale),
         value: locale.split(' ')[0],
+        icon: require(`@/assets/icons/flags/${locale.split(' ')[0]}.svg`),
       }));
     },
   },
