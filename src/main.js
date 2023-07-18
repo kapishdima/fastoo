@@ -11,9 +11,7 @@ import ru from '@/locales/ru.json';
 const messages = {
   en: en,
   ge: ge,
-  ru: {
-    message: ru,
-  },
+  ru: ru,
 };
 
 const i18n = createI18n({

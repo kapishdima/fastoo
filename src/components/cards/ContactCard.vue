@@ -3,8 +3,8 @@
     <div class="contact-card__icon-container">
       <img :src="icon" />
     </div>
-    <h5 class="contact-card__title">{{ title }}</h5>
-    <div class="contact-card__value" v-html="value"></div>
+    <h5 class="contact-card__title">{{ $t(title) }}</h5>
+    <div class="contact-card__value" v-html="$t(value)"></div>
   </div>
 </template>
 
