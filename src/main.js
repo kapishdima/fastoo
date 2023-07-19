@@ -6,12 +6,12 @@ import { router } from '@/app/router';
 
 import en from '@/locales/en.json';
 import ge from '@/locales/ge.json';
-import ru from '@/locales/ru.json';
+// import ru from '@/locales/ru.json';
 
 const messages = {
   en: en,
   ge: ge,
-  ru: ru,
+  // ru: ru,
 };
 
 const i18n = createI18n({
