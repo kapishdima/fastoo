@@ -7,9 +7,14 @@
       <div class="section-documents__title heading-2">Documents which you have to provide</div>
       <div class="documents-container">
         <div class="document-item">
-          <a href="#" class="document-link">List of documents for merchants_Eng_Rus.pdf</a>
+          <a href="#" class="document-link">KYC Questionnaire_New Payment System.pdf</a>
           <div class="document-actions">
-            <div class="document-actions__item">To download</div>
+            <a
+              href="assets/documents/KYC Questionnaire_New Payment System.pdf"
+              download
+              class="document-actions__item"
+              >To download</a
+            >
             <div class="document-actions__item">To review</div>
           </div>
         </div>

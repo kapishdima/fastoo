@@ -13,7 +13,7 @@
             <v-tab title="E-Comm Merchant Application Form ">
               <div class="application-form-column">
                 <form-field label="Application Date" size="md">
-                  <input-field size="md" />
+                  <datepicker-field size="md" />
                 </form-field>
                 <div class="checkbox-group">
                   <checkbox-field key="New Merchant" label="New Merchant" />
@@ -190,6 +190,7 @@ import SectionBanner from '@/components/layout/Section/SectionBanner.vue';
 import CheckboxField from '@/components/fields/checkbox/CheckboxField.vue';
 import VTab from '@/components/tabs/VTab.vue';
 import VTabs from '@/components/tabs/VTabs.vue';
+import DatepickerField from '@/components/fields/DatepickerField/DatepickerField.vue';
 
 import { pathes } from '@/app/router';
 
@@ -311,6 +312,7 @@ export default {
     SectionBanner,
     CheckboxField,
     VButton,
+    DatepickerField,
   },
 };
 </script>
