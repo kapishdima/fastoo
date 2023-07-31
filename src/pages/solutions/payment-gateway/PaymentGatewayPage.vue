@@ -62,7 +62,7 @@
           <li>
             {{
               $t(
-                'Address Verification System (AVS). AVS compares the billing address provided by the cardholder with the address on file at the credit card company. Nowadays AVS is widely used in United States and Canada.',
+                'Address Verification System (AVS). AVS compares the billing address provided by the cardholder with the address on file at the credit card company. Nowadays AVS is widely used in Georgia.',
               )
             }}
           </li>

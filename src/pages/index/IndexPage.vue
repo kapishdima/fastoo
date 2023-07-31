@@ -64,7 +64,7 @@
         <p class="paragraph">
           {{
             $t(
-              'Fastoo INC. is a Canadian company, licensed by the standards of Money Service Business (MSB) that builds business upon high-quality service and customers’ trust, providing that individual and attentive approach, immediate reaction to inquiries, readiness to provide nothing but the best possible service are the qualities to focus on, because they make us reliable.',
+              'Fastoo INC. is a Georgia company, licensed by the standards of Money Service Business (MSB) that builds business upon high-quality service and customers’ trust, providing that individual and attentive approach, immediate reaction to inquiries, readiness to provide nothing but the best possible service are the qualities to focus on, because they make us reliable.',
             )
           }}
         </p>

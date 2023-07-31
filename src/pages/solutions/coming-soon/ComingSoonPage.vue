@@ -15,7 +15,7 @@
         <p class="paragraph--md">
           {{
             $t(
-              'Magua Pay is the company that successfully helps merchant from numerous types of business with credit card processing. All our clients are different. They have own style of work, however we provide payments solutions for everyone. Regardless of type of industry or size, each company is eager to receive first-rate credit card processing solution on fair conditions with all needful features and extremely high level of reliability. Very important thing is customer service because the best payment solution is solution offered opportunely.',
+              'Fastoo is the company that successfully helps merchant from numerous types of business with credit card processing. All our clients are different. They have own style of work, however we provide payments solutions for everyone. Regardless of type of industry or size, each company is eager to receive first-rate credit card processing solution on fair conditions with all needful features and extremely high level of reliability. Very important thing is customer service because the best payment solution is solution offered opportunely.',
             )
           }}
         </p>
@@ -33,7 +33,7 @@
         <p class="paragraph--md">
           {{
             $t(
-              'Magua Pay is the company that successfully helps merchant from numerous types of business with credit card processing. All our clients are different. They have own style of work, however we provide payments solutions for everyone. Regardless of type of industry or size, each company is eager to receive first-rate credit card processing solution on fair conditions with all needful features and extremely high level of reliability. Very important thing is customer service because the best payment solution is solution offered opportunely.',
+              'Fastoo is the company that successfully helps merchant from numerous types of business with credit card processing. All our clients are different. They have own style of work, however we provide payments solutions for everyone. Regardless of type of industry or size, each company is eager to receive first-rate credit card processing solution on fair conditions with all needful features and extremely high level of reliability. Very important thing is customer service because the best payment solution is solution offered opportunely.',
             )
           }}
         </p>
