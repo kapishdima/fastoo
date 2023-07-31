@@ -13,7 +13,7 @@
             class="document-link"
             >List of documents for merchants_Eng_Rus.pdf</a
           >
-          <div class="document-actions">
+          <!-- <div class="document-actions">
             <a
               :href="document1"
               download="List of documents for merchants_Eng_Rus.pdf"
@@ -21,7 +21,7 @@
               >To download</a
             >
             <div class="document-actions__item">To review</div>
-          </div>
+          </div> -->
         </div>
         <div class="document-item">
           <a
@@ -30,7 +30,7 @@
             class="document-link"
             >KYC Questionnaire_New Payment System.pdf</a
           >
-          <div class="document-actions">
+          <!-- <div class="document-actions">
             <a
               :href="document2"
               download="KYC Questionnaire_New Payment System.pdf"
@@ -39,7 +39,7 @@
             >
 
             <div class="document-actions__item">To review</div>
-          </div>
+          </div> -->
         </div>
         <div class="document-item">
           <a
@@ -48,7 +48,7 @@
             class="document-link"
             >Ownership_Structure_if_there_is_one_UBO_in_the_ownership_structure.docx</a
           >
-          <div class="document-actions">
+          <!-- <div class="document-actions">
             <a
               :href="document3"
               download="Ownership_Structure_if_there_is_one_UBO_in_the_ownership_structure.docx"
@@ -57,7 +57,7 @@
             >
 
             <div class="document-actions__item">To review</div>
-          </div>
+          </div> -->
         </div>
         <router-link class="button-link" :to="{ path: pathes.ACCOUNT_APPLICATION_FORM }">
           <v-button>Next step</v-button>
