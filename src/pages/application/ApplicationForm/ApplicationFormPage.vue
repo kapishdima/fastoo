@@ -171,7 +171,7 @@
           </v-tabs>
           <div class="form-actions">
             <router-link class="button-link" :to="{ path: pathes.ACCOUNT_MERCHANTS_FORM }">
-              <v-button>Next step</v-button>
+              <v-button>{{ $t('Next step') }}</v-button>
             </router-link>
           </div>
         </template>
@@ -193,6 +193,78 @@ import VTabs from '@/components/tabs/VTabs.vue';
 import DatepickerField from '@/components/fields/DatepickerField/DatepickerField.vue';
 
 import { pathes } from '@/app/router';
+
+// const a = {
+//   application_data: '',
+//   merchant: {
+//     type: '',
+//     name: '',
+//     url: '',
+//     address: '',
+//     state: '',
+//     country: '',
+//     postcode: '',
+//     nature_of_core_business: '',
+//     documents: '',
+//     contact_person_name: '',
+//     contact_person_phone: '',
+//     contact_person_email: '',
+//     it_person_name: '',
+//     it_person_phone: '',
+//     it_person_email: '',
+//     support_person_name: '',
+//     support_person_phone: '',
+//     support_person_email: '',
+//     scanned_urls: '',
+//   },
+//   owneship: {
+//     type: '',
+//     owner_name: '',
+//     id_card: '',
+//     structure: '',
+//     address: '',
+//     counry: '',
+//     post_code: '',
+//     phone: '',
+//     email: '',
+//   },
+//   limits: {
+//     terminal_currency: '',
+//     terminal_timezone: '',
+//     trans_avg: '',
+//     estimated_month_value: '',
+//     avg_ticket_size: '',
+//     max_ticket_size: '',
+//     max_tps: '',
+//     avg_tps: '',
+//     refund_amount: '',
+//   },
+//   activity_range: '',
+//   type_of_integration: {
+//     isSecureStructure: boolean,
+//     payment_page: 'Bank Payment Page' || 'Via API (PSI DSS Mandatory)',
+//   },
+//   additional_features: {
+//     hasAuthMessage: boolean,
+//     dynamicDescription: boolean,
+//     refund: boolean,
+//     merchant_portal_access: boolean,
+//     application_status_receiver: 'email' || 'phone_number',
+//   },
+
+//   merchants: [
+//     {
+//       merchant_web_link: '',
+//       legal_name: '',
+//       cin: '',
+//       mcc: '',
+//       expected_transations_amount: '',
+//       expected_transations_count: '',
+//     },
+//   ],
+
+//   documents: [File]
+// };
 
 export default {
   setup() {

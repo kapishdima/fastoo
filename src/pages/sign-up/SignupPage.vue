@@ -6,7 +6,7 @@
       <div class="section-sign-up__title heading-2">{{ $t('Sign up') }}</div>
       <interactions-list />
       <router-link class="button-link" :to="{ path: pathes.ACCOUNT_NEEDED_DOCUMENTS }">
-        <v-button>Get started</v-button>
+        <v-button>{{ $t('Get started') }}</v-button>
       </router-link>
     </section>
   </v-page>

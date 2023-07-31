@@ -81,7 +81,7 @@ export const menu = [
       { path: pathes.SOLUTION_PAYMENT_GATEWAY, title: 'Payment Gateway' },
       { path: pathes.SOLUTION_RECURRING_BILLING, title: 'Recurring Billing service' },
       { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, title: 'Multicurrency Processing' },
-      { path: pathes.SOLUTION_COMING_SOON, title: 'Coming soon' },
+      { path: pathes.SOLUTION_COMING_SOON, title: 'Coming Soon' },
     ],
   },
   { path: pathes.PARTNERS, title: 'Partners' },

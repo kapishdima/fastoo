@@ -60,7 +60,7 @@
           </div> -->
         </div>
         <router-link class="button-link" :to="{ path: pathes.ACCOUNT_APPLICATION_FORM }">
-          <v-button>Next step</v-button>
+          <v-button>{{ $t('Next step') }}</v-button>
         </router-link>
       </div>
     </section>
