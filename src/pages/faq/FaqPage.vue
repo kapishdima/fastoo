@@ -8,13 +8,7 @@
     <section class="section-contact">
       <div class="section-decoration"></div>
       <h3 class="heading-3 section-contact__title">{{ $t('Do you have any questions') }}</h3>
-      <p class="paragraph--md section-contact__description">
-        {{
-          $t(
-            'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet consectetur adipiscing elit',
-          )
-        }}
-      </p>
+
       <contact-form />
     </section>
   </v-page>
