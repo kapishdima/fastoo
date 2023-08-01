@@ -71,7 +71,7 @@ export default {
         icon: require('@/assets/icons/i_mail.svg'),
         title: 'Email',
         value:
-          '<a href="mailt:newpaymentsystems@gmail.com" style="color: inherit; text-decoration: none;">newpaymentsystems@gmail.com</a>',
+          '<a href="mailt:info@fastoomerchant.com" style="color: inherit; text-decoration: none;">info@fastoomerchant.com</a>',
       },
       {
         icon: require('@/assets/icons/i_location.svg'),

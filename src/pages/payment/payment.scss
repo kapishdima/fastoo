@@ -1,11 +1,51 @@
 .payment-page {
+  .section-banner {
+    margin-bottom: 0;
+  }
   .section-payment-form {
+    position: relative;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
+    padding-top: 60px;
     padding-bottom: 120px;
+
+    .section-decoration {
+      position: absolute;
+      top: 0;
+      left: -$container-fullhd-padding;
+      z-index: -1;
+
+      width: 100vw;
+      height: 35%;
+
+      background: $accent-primary;
+
+      @include tabletMD {
+        height: 35%;
+        left: -$container-table-padding;
+      }
+
+      @include mobile {
+        height: 15%;
+
+        left: -$container-mobile-padding;
+      }
+    }
+
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    .paragraph {
+      text-align: center;
+    }
   }
   .payment-form-container {
+    margin-top: 16px;
     width: 50vw;
 
     padding: 40px;
@@ -13,6 +53,10 @@
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.1);
     border-radius: 5px;
+
+    @include tabletMD {
+      width: 100%;
+    }
   }
 
   .form-field__currency {

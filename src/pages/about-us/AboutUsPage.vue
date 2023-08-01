@@ -135,8 +135,8 @@
             </div>
             <div class="contacts-list__item">
               <div class="contacts-list__item-title">{{ $t('Email') }}:</div>
-              <a href="mailto:newpaymentsystems@gmail.com" class="contacts-list__item-value"
-                >newpaymentsystems@gmail.com</a
+              <a href="mailto:info@fastoomerchant.com" class="contacts-list__item-value"
+                >info@fastoomerchant.com</a
               >
             </div>
           </div>

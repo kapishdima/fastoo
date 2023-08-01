@@ -170,9 +170,9 @@
             </v-tab>
           </v-tabs>
           <div class="form-actions">
-            <!-- <router-link class="button-link" :to="{ path: pathes.ACCOUNT_MERCHANTS_FORM }">
-            </router-link> -->
-            <v-button type="submit">{{ $t('Next step') }}</v-button>
+            <router-link class="button-link" :to="{ path: pathes.ACCOUNT_MERCHANTS_FORM }">
+              <v-button>{{ $t('Next step') }}</v-button>
+            </router-link>
           </div>
         </template>
       </v-form>

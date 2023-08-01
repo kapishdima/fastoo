@@ -7,6 +7,13 @@
     />
 
     <section class="section-payment-form">
+      <h3 class="heading-3 section-payment-form__title">
+        {{ $t('Payment Form') }}
+      </h3>
+      <h3 class="paragraph section-payment-form__title">
+        {{ $t('To pay with a credit card, fill in all the fields') }}
+      </h3>
+      <div class="section-decoration"></div>
       <div class="payment-form-container">
         <v-form>
           <template #fields="{}">

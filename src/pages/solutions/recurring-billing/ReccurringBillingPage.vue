@@ -61,6 +61,7 @@
           <li>{{ $t('Lottery') }}</li>
           <li>{{ $t('Gaming') }}</li>
           <li>{{ $t('E-commerce') }}</li>
+          <li>{{ $t('Online education') }}</li>
         </ul>
       </div>
       <div class="section-sidebar">
