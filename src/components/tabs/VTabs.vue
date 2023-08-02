@@ -8,7 +8,7 @@
         :key="tab.props?.title"
         @click="selectedIndex = tab.props?.title"
       >
-        {{ tab.props?.title }}
+        {{ $t(tab.props?.title) }}
       </div>
     </div>
     <div class="tabs-panes">

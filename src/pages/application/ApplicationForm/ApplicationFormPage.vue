@@ -4,13 +4,13 @@
 
     <section class="section-application-form">
       <div class="section-application-form__header">
-        <h2 class="heading-2">Application form</h2>
+        <h2 class="heading-2">{{ $t('Application form') }}</h2>
       </div>
 
       <v-form classes="application-form" @submit="submitApplication" :initial-values="formData">
         <template #fields="{ values }">
           <v-tabs>
-            <v-tab title="E-Comm Merchant Application Form ">
+            <v-tab title="E-Comm Merchant Application Form">
               <div class="application-form-column">
                 <form-field label="Application Date" size="md">
                   <datepicker-field size="md" v-model="values.application_date" />
@@ -78,7 +78,7 @@
                 </template>
               </div>
             </v-tab>
-            <v-tab title="Activity Range ">
+            <v-tab title="Activity Range">
               <div class="application-form-row">
                 <template v-for="field of columns['Activity Range']" :key="field.label">
                   <form-field size="md" :label="field.label" v-if="field.type === 'text'">
@@ -146,7 +146,7 @@
                 </template>
               </div>
             </v-tab>
-            <v-tab title="To receive application status ">
+            <v-tab title="To receive application status">
               <div class="application-form-column">
                 <template
                   v-for="field of columns['To receive application status']"
@@ -170,9 +170,7 @@
             </v-tab>
           </v-tabs>
           <div class="form-actions">
-            <router-link class="button-link" :to="{ path: pathes.ACCOUNT_MERCHANTS_FORM }">
-              <v-button>{{ $t('Next step') }}</v-button>
-            </router-link>
+            <v-button type="submit">{{ $t('Next step') }}</v-button>
           </div>
         </template>
       </v-form>
@@ -193,11 +191,8 @@ import VTabs from '@/components/tabs/VTabs.vue';
 import DatepickerField from '@/components/fields/DatepickerField/DatepickerField.vue';
 
 import { format } from '@/components/fields/DatepickerField/format';
-import { pathes } from '@/app/router';
+import { pathes, router } from '@/app/router';
 import set from 'lodash.set';
-// import set from 'lodash.set';
-
-// import { sendApplication } from '@/api/application.api';
 
 export default {
   setup() {
@@ -215,7 +210,7 @@ export default {
         { type: 'text', label: 'Trading Name', model: 'merchant.tranding_name' },
         { type: 'text', label: 'Business Registration Number', model: 'merchant.number' },
         { type: 'text', label: 'Registration Date', model: 'merchant.registration_date' }, // datepicker
-        { type: 'text', label: 'Website / Live URL ', model: 'merchant.website' },
+        { type: 'text', label: 'Website / Live URL', model: 'merchant.website' },
         {
           type: 'text',
           label: 'URLs and IP Addresses Impacting the Cardholder Data Environment to be Scanned',
@@ -229,7 +224,7 @@ export default {
         { type: 'text', label: 'Postcode', model: 'merchant.postcode' },
         {
           type: 'text',
-          label: 'Nature of Core Business ',
+          label: 'Nature of Core Business',
           model: 'merchant.nature_of_core_business',
         },
         { type: 'text', label: 'License and related documetnation', model: 'merchant.documents' },
@@ -271,7 +266,7 @@ export default {
         { type: 'text', label: 'Type of Ownership', model: 'owneship.type' },
         { type: 'text', label: 'Owner’s Name/s', model: 'owneship.owner_name' },
         { type: 'text', label: 'Registration No. / ID Card No.', model: 'owneship.id_card' },
-        { type: 'text', label: 'Ownership Structure ', model: 'owneship.structure' },
+        { type: 'text', label: 'Ownership Structure', model: 'owneship.structure' },
         { type: 'text', label: 'Registered Address', model: 'owneship.address' },
         { type: 'text', label: 'Country', model: 'owneship.counry' },
         { type: 'text', label: 'Post Code', model: 'owneship.post_code' },
@@ -284,24 +279,24 @@ export default {
         { type: 'text', label: 'Average Transaction Daily Amount', model: 'limits.trans_avg' },
         { type: 'text', label: 'Estimated Monthly Volume', model: 'limits.estimated_month_value' },
         { type: 'text', label: 'Average Ticket Size', model: 'limits.avg_ticket_size' },
-        { type: 'text', label: 'Maximum Ticket Size ', model: 'limits.max_ticket_size' },
-        { type: 'text', label: 'Maximum TPS ', model: 'limits.max_tps' },
-        { type: 'text', label: 'Avarege  TPS', model: 'limits.avg_tps' },
-        { type: 'text', label: 'Refund daily avarage Amount ', model: 'limits.refund_amount' },
+        { type: 'text', label: 'Maximum Ticket Size', model: 'limits.max_ticket_size' },
+        { type: 'text', label: 'Maximum TPS', model: 'limits.max_tps' },
+        { type: 'text', label: 'Average TPS', model: 'limits.avg_tps' },
+        { type: 'text', label: 'Refund daily avarage Amount', model: 'limits.refund_amount' },
       ],
       'Activity Range': [
-        { type: 'text', label: 'Expected transaction peack time slot/s', model: 'activity_range' },
+        { type: 'text', label: 'Expected transaction peak time slot/s', model: 'activity_range' },
       ],
       'Type of Integration': [
         {
           type: 'checkbox',
           label:
-            'Is your technological architecture compliant  to the  payment cards industry data security standarts (PCI DSS)?',
+            'Is your technological architecture compliant to the payment cards industry data security standards (PCI DSS)?',
           children: [{ label: 'Yes' }, { label: 'No' }],
         },
         {
           type: 'checkbox',
-          label: 'Card data input method  - Payment Page',
+          label: 'Card data input method - Payment Page',
           children: [{ label: 'Bank Payment Page' }, { label: 'Via API (PSI DSS Mandatory)' }],
         },
       ],
@@ -325,14 +320,14 @@ export default {
       'Merchant Portal': [
         {
           type: 'checkbox',
-          label: 'Mercant Portal Access',
+          label: 'Merchant Portal Access',
           children: [{ label: 'Yes' }, { label: 'No' }],
         },
-        { type: 'text', label: 'Mercant Portal Admin user Information, Name, surname, Email' },
+        { type: 'text', label: 'Merchant Portal Admin user Information, Name, surname, Email' },
       ],
       'To receive application status': [
-        { type: 'text', label: 'Email*' },
-        { type: 'text', label: 'Phone number*' },
+        { type: 'text', label: 'Email' },
+        { type: 'text', label: 'Phone number' },
       ],
     };
 
@@ -440,8 +435,9 @@ export default {
         return acc;
       }, {});
 
-      console.log(payload);
-      // sendApplication(values);
+      window.localStorage.setItem('application_data', JSON.stringify(payload));
+
+      router.push(pathes.ACCOUNT_MERCHANTS_FORM);
     },
   },
 };

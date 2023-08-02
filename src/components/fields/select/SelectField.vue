@@ -57,7 +57,6 @@ export default {
   },
 
   mounted() {
-    console.log(this.options);
     document.addEventListener('keydown', this.onEscapePressed);
   },
 

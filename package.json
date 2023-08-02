@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tanstack/vue-table": "^8.9.3",
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "intl-tel-input": "^18.1.8",

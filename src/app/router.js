@@ -22,6 +22,8 @@ import RecurringBillingPage from '@/pages/solutions/recurring-billing/Reccurring
 import MulticurrencyProcessing from '@/pages/solutions/multicurrency-processing/MulticurrencyProccessingPage.vue';
 import ComingSoonPage from '@/pages/solutions/coming-soon/ComingSoonPage.vue';
 
+import DocumentsTable from '@/pages/application/DocumentsTable/DocumentsTable.vue';
+
 export const pathes = {
   INDEX: '/',
   PARTNERS: '/partners',
@@ -45,6 +47,7 @@ export const pathes = {
   SOLUTION_RECURRING_BILLING: '/solutions/recurring-billing',
   SOLUTION_MULTICURRENCY_PROCESSING: '/solutions/multicurrency-processing',
   SOLUTION_COMING_SOON: '/solutions/coming-soon',
+  ACCOUNT_DETAILS: '/account/details',
 };
 
 const routes = [
@@ -67,6 +70,8 @@ const routes = [
   { path: pathes.SOLUTION_RECURRING_BILLING, component: RecurringBillingPage },
   { path: pathes.SOLUTION_MULTICURRENCY_PROCESSING, component: MulticurrencyProcessing },
   { path: pathes.SOLUTION_COMING_SOON, component: ComingSoonPage },
+  { path: pathes.SOLUTION_COMING_SOON, component: ComingSoonPage },
+  { path: pathes.ACCOUNT_DETAILS, component: DocumentsTable },
 ];
 
 export const menu = [

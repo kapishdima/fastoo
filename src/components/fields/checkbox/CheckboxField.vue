@@ -16,7 +16,7 @@
     @click="check"
   >
     <label v-if="Boolean(label)" for="#checkbox-field" class="checkbox-field__label">
-      {{ label }}
+      {{ $t(label) }}
     </label>
     <div id="checkbox-field" class="checkbox-field__box">
       <img v-if="checked" src="@/assets/icons/check-icon.svg" alt="Checked" />

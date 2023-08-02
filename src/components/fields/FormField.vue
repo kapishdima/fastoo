@@ -1,6 +1,6 @@
 <template>
   <div class="form-field" :class="`form-field--${size}`">
-    <label class="form-field__label">{{ label }}</label>
+    <label class="form-field__label">{{ $t(label) }}</label>
     <slot></slot>
   </div>
 </template>

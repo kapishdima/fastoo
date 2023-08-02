@@ -4,14 +4,17 @@
 
     <section class="section-documents">
       <div class="section-decoration"></div>
-      <div class="section-documents__title heading-2">Documents which you have to provide</div>
+      <div class="section-documents__title heading-2">
+        {{ $t('Documents which you have to provide') }}
+      </div>
       <div class="documents-container">
         <div class="document-item">
+          <img src="@/assets/document-icon.svg" alt="" />
           <a
             :href="document1"
             download="List of documents for merchants_Eng_Rus.pdf"
             class="document-link"
-            >List of documents for merchants_Eng_Rus.pdf</a
+            >List of documents for merchants.pdf</a
           >
           <!-- <div class="document-actions">
             <a
@@ -24,11 +27,12 @@
           </div> -->
         </div>
         <div class="document-item">
+          <img src="@/assets/document-icon.svg" alt="" />
           <a
             :href="document2"
             download="KYC Questionnaire_New Payment System.pdf"
             class="document-link"
-            >KYC Questionnaire_New Payment System.pdf</a
+            >KYC Questionnaire.pdf</a
           >
           <!-- <div class="document-actions">
             <a
@@ -42,11 +46,12 @@
           </div> -->
         </div>
         <div class="document-item">
+          <img src="@/assets/document-icon.svg" alt="" />
           <a
             :href="document3"
             download="Ownership_Structure_if_there_is_one_UBO_in_the_ownership_structure.docx"
             class="document-link"
-            >Ownership_Structure_if_there_is_one_UBO_in_the_ownership_structure.docx</a
+            >Ownership Structure.docx</a
           >
           <!-- <div class="document-actions">
             <a
