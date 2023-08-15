@@ -108,7 +108,7 @@ export const menu = [
     ],
   },
   { path: pathes.ABOUT_US, title: "About Us" },
-  { path: pathes.CONTACTS, title: "Contact Us" },
+  { path: pathes.CONTACTS, title: "Contact us" },
   // { path: pathes.PAYMENT, title: 'Payment' },
 ];
 
